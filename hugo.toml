@@ -1,4 +1,4 @@
-baseURL = "http://localhost:1313/"
+baseURL = "https://teddythewriter.github.io/teddywrites/"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 theme = "hermit-v2"
