@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+	<channel>
+		<title>Tags on teddywrites</title>
+		<link>http://localhost:1313/en/tags/</link>
+		<description>Recent content in Tags on teddywrites</description>
+		<generator>Hugo -- 0.161.1</generator>
+		<language>en</language>
+		<lastBuildDate>Wed, 25 Dec 2024 17:33:40 +0000</lastBuildDate>
+		<atom:link href="http://localhost:1313/en/tags/index.xml" rel="self" type="application/rss+xml" />
+		
+		
+		<item>
+			<title>Funny</title>
+			<link>http://localhost:1313/en/tags/funny/</link>
+			<pubDate>Wed, 25 Dec 2024 17:33:40 +0000</pubDate><author>Teddy</author><guid>http://localhost:1313/en/tags/funny/</guid>
+			<description><![CDATA[&lt;no value&gt;]]></description><content type="text/html" mode="escaped"><![CDATA[]]></content>
+		</item>
+		
+		<item>
+			<title>Life</title>
+			<link>http://localhost:1313/en/tags/life/</link>
+			<pubDate>Wed, 25 Dec 2024 17:33:40 +0000</pubDate><author>Teddy</author><guid>http://localhost:1313/en/tags/life/</guid>
+			<description><![CDATA[&lt;no value&gt;]]></description><content type="text/html" mode="escaped"><![CDATA[]]></content>
+		</item>
+		
+		<item>
+			<title>Relationships</title>
+			<link>http://localhost:1313/en/tags/relationships/</link>
+			<pubDate>Wed, 25 Dec 2024 17:33:40 +0000</pubDate><author>Teddy</author><guid>http://localhost:1313/en/tags/relationships/</guid>
+			<description><![CDATA[&lt;no value&gt;]]></description><content type="text/html" mode="escaped"><![CDATA[]]></content>
+		</item>
+		
+		<item>
+			<title>Romance</title>
+			<link>http://localhost:1313/en/tags/romance/</link>
+			<pubDate>Wed, 25 Dec 2024 17:33:40 +0000</pubDate><author>Teddy</author><guid>http://localhost:1313/en/tags/romance/</guid>
+			<description><![CDATA[&lt;no value&gt;]]></description><content type="text/html" mode="escaped"><![CDATA[]]></content>
+		</item>
+		
+		<item>
+			<title>Short Story</title>
+			<link>http://localhost:1313/en/tags/short-story/</link>
+			<pubDate>Wed, 25 Dec 2024 17:33:40 +0000</pubDate><author>Teddy</author><guid>http://localhost:1313/en/tags/short-story/</guid>
+			<description><![CDATA[&lt;no value&gt;]]></description><content type="text/html" mode="escaped"><![CDATA[]]></content>
+		</item>
+		
+		<item>
+			<title>Thoughts</title>
+			<link>http://localhost:1313/en/tags/thoughts/</link>
+			<pubDate>Wed, 25 Dec 2024 17:33:40 +0000</pubDate><author>Teddy</author><guid>http://localhost:1313/en/tags/thoughts/</guid>
+			<description><![CDATA[&lt;no value&gt;]]></description><content type="text/html" mode="escaped"><![CDATA[]]></content>
+		</item>
+		
+		<item>
+			<title>Writing</title>
+			<link>http://localhost:1313/en/tags/writing/</link>
+			<pubDate>Wed, 25 Dec 2024 17:33:40 +0000</pubDate><author>Teddy</author><guid>http://localhost:1313/en/tags/writing/</guid>
+			<description><![CDATA[&lt;no value&gt;]]></description><content type="text/html" mode="escaped"><![CDATA[]]></content>
+		</item>
+		
+		<item>
+			<title>Mental Health</title>
+			<link>http://localhost:1313/en/tags/mental-health/</link>
+			<pubDate>Thu, 09 Sep 2021 18:29:15 +0000</pubDate><author>Teddy</author><guid>http://localhost:1313/en/tags/mental-health/</guid>
+			<description><![CDATA[&lt;no value&gt;]]></description><content type="text/html" mode="escaped"><![CDATA[]]></content>
+		</item>
+		
+		<item>
+			<title>Note</title>
+			<link>http://localhost:1313/en/tags/note/</link>
+			<pubDate>Thu, 29 Oct 2020 19:26:41 +0000</pubDate><author>Teddy</author><guid>http://localhost:1313/en/tags/note/</guid>
+			<description><![CDATA[&lt;no value&gt;]]></description><content type="text/html" mode="escaped"><![CDATA[]]></content>
+		</item>
+		
+	</channel>
+</rss>

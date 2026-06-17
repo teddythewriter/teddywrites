@@ -1,0 +1,71 @@
+baseURL = "http://localhost:1313/"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+theme = "hermit-v2"
+
+title = 'teddywrites'
+
+[languages.en.params]
+  homeSubtitle = "If I were to write everything that's in my mind, I'd lose it quite easily."
+
+locale = "en-US"
+
+pygmentsCodefences  = true
+pygmentsUseClasses  = true
+
+rssLimit = 10
+
+copyright = "teddywrites"
+enableEmoji = true
+
+[frontmatter]
+  date = ["date", "publishDate", "lastmod"]
+  lastmod = ["lastmod", ":git", "date", "publishDate"]
+  publishDate = ["publishDate", "date"]
+  expiryDate = ["expiryDate"]
+
+[params.author]
+  name = "Teddy"
+  about = ""
+
+[taxonomies]
+  tag = "tags"
+
+[params]
+  themeColor = "#494f5c"
+  accentColor = "#018472"
+  footerCopyright = "teddywrites"
+  justifyContent = false
+  relatedPosts = true
+  code_copy_button = true
+  homeSubtitlePrinter = true
+  scrollToTop = true
+  global_mathjax = false
+  readTime = true
+  readTimeSeparator = "min read"
+  shareSocial = false
+  socialLinks = []
+
+  [params.gallery]
+    enable = true
+    width = '300'
+    layout = "grid"
+
+  [params.dateform]
+    CopyrightDate = "2006"
+    LongDate = "Jan 2, 2006"
+    ShortDate = "Jan 2"
+    NumDateShort = "2006-01-02"
+    NumDateLong = "2006-01-02 15:04 -0700"
+
+[menu]
+
+  [[menu.main]]
+    name = "Posts"
+    url = "posts/"
+    weight = 10
+
+  [[menu.main]]
+    name = "About"
+    url = "about/"
+    weight = 20
