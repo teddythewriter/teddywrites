@@ -199,3 +199,9 @@ $admonition-color: (
     "bug": $folly,
     "summary": $goldenrod,
     ) !default;
+
+    body {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='680' height='200'%3E%3Cg opacity='0.33' stroke='%23a8b89f' stroke-width='1.2' fill='none'%3E%3Cg transform='translate(60,50)'%3E%3Crect x='0' y='8' width='28' height='22' rx='3'/%3E%3Cpath d='M28 14 Q38 14 38 19 Q38 24 28 24'/%3E%3Cline x1='4' y1='8' x2='4' y2='0'/%3E%3Cline x1='14' y1='8' x2='14' y2='0'/%3E%3Crect x='-4' y='30' width='36' height='4' rx='2'/%3E%3C/g%3E%3Cg transform='translate(260,40)'%3E%3Cpath d='M20 0 Q10 2 0 5 L0 35 Q10 32 20 30Z'/%3E%3Cpath d='M20 0 Q30 2 40 5 L40 35 Q30 32 20 30Z'/%3E%3Cline x1='20' y1='0' x2='20' y2='30'/%3E%3C/g%3E%3Cg transform='translate(380,45)'%3E%3Cpath d='M8 0 Q16 10 16 16 Q16 24 8 24 Q0 24 0 16 Q0 10 8 0Z'/%3E%3C/g%3E%3C/g%3E%3Cg opacity='0.3' stroke='%23d9a8a8' stroke-width='1.2' fill='none'%3E%3Cg transform='translate(120,145)'%3E%3Cpath d='M0 40 Q10 20 30 0 Q20 15 15 25 Q10 20 0 40Z'/%3E%3Cline x1='15' y1='25' x2='0' y2='40'/%3E%3C/g%3E%3Cg transform='translate(320,145)'%3E%3Cpath d='M20 0 Q10 2 0 5 L0 35 Q10 32 20 30Z'/%3E%3Cpath d='M20 0 Q30 2 40 5 L40 35 Q30 32 20 30Z'/%3E%3Cline x1='20' y1='0' x2='20' y2='30'/%3E%3C/g%3E%3Cg transform='translate(540,155)'%3E%3Cline x1='8' y1='0' x2='8' y2='16'/%3E%3Cline x1='0' y1='8' x2='16' y2='8'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 680px 200px;
+}
