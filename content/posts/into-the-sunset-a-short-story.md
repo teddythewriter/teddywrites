@@ -2,7 +2,7 @@
 title: "Into the sunset - A Short story"
 date: 2021-09-09T18:29:15+00:00
 draft: false
-tags: ["Mental Health", "Romance", "Short story"]
+tags: ["mental health", "romance", "short story"]
 ---
 
 It isn't easy, you know. Eventually, you'll start to see me as I see myself right now, and the feelings you have for me will fade away like they never existed in the first place.

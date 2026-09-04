@@ -2,7 +2,7 @@
 title: "Dear 17 year old me"
 date: 2020-08-15T06:54:58+00:00
 draft: false
-tags: ["Note"]
+tags: ["note"]
 ---
 
 Dear 17 year old me,

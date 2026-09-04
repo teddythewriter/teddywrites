@@ -2,7 +2,7 @@
 title: "The girl on the train"
 date: 2020-10-02T21:33:25+00:00
 draft: false
-tags: ["Note"]
+tags: ["note"]
 ---
 
 No, it's not a story about a childhood friend. I was a young boy when i first saw her. I was on the way to school on a train and with the puberty and the hormones world was a different place than before. and then there she was, the woman i felt attracted to. I don't want to label it as love but there was something about her that's compelling and it drew me to her. The exhausting journey on the train turned out to be an hour in heaven to me. My attendance went up at school and i just loved every moment i spent looking at her.

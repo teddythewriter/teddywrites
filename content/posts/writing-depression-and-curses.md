@@ -2,7 +2,7 @@
 title: "Writing, Depression and Curses"
 date: 2020-08-15T07:02:33+00:00
 draft: false
-tags: ["Note"]
+tags: ["note"]
 ---
 
 It's hard to describe a feeling when you're not feeling it yourself. You can try, but it won't work. It'll end up being a version of your most common feeling. You can convince yourself that it is the real feeling but you know that it isn't. Be it anything good or bad if you can't feel it for yourself, you can't.

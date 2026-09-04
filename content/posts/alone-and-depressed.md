@@ -2,7 +2,7 @@
 title: "Alone and Depressed"
 date: 2020-08-18T16:15:14+00:00
 draft: false
-tags: ["Note"]
+tags: ["note"]
 ---
 
 I just want to talk to someone,  

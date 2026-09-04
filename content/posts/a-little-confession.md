@@ -2,7 +2,7 @@
 title: "A little confession"
 date: 2020-10-29T19:26:41+00:00
 draft: false
-tags: ["Note"]
+tags: ["note"]
 ---
 
 I'm writing this in case if things go south.  

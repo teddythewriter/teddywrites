@@ -2,7 +2,7 @@
 title: "Love, Time, and Messages"
 date: 2024-12-25T17:33:40+00:00
 draft: false
-tags: ["funny", "life", "relationships", "Romance", "Short story", "thoughts", "writing"]
+tags: ["funny", "life", "relationships", "romance", "short story", "thoughts", "writing"]
 ---
 
 It finally happened. It was only funny when I was theorycrafting about it, but now that it really happened, I don’t know how to handle this.
