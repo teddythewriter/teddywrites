@@ -8,26 +8,20 @@
  * Add CSS rules below to enable the stylesheet.
  */
 
-/* Present featured artwork as part of the story instead of an almost-hidden
-   full-screen background. */
-.bg-img {
-  position: relative;
-  top: auto;
-  width: min(1120px, calc(100% - 2rem));
-  height: clamp(18rem, 52vw, 40rem);
-  margin: clamp(1.25rem, 4vw, 3rem) auto 0;
-  opacity: 1;
-  z-index: 0;
-  background-attachment: scroll;
-  background-position: center;
-  border-radius: 6px;
-  box-shadow: 0 1.25rem 3rem rgba(20, 25, 24, 0.2);
+/* Keep featured artwork inside the same measure as the story text. */
+.story-cover {
+  width: 100%;
+  margin: 0 0 clamp(1.75rem, 4vw, 3rem);
 }
 
-.bg-img.show-bg-img {
-  z-index: 0;
-  opacity: 1;
-  cursor: default;
+.story-cover img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 0.8rem 2rem rgba(20, 25, 24, 0.16);
 }
 
 #img-btn {
@@ -35,10 +29,7 @@
 }
 
 @media (max-width: 600px) {
-  .bg-img {
-    width: calc(100% - 1rem);
-    height: clamp(14rem, 62vw, 22rem);
-    margin-top: 0.5rem;
+  .story-cover img {
     border-radius: 4px;
   }
 }

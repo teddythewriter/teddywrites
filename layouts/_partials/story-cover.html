@@ -1,0 +1,9 @@
+{{- $src := .Params.featuredImg -}}
+{{- if and (not $src) .Params.images -}}
+  {{- $src = index .Params.images 0 -}}
+{{- end -}}
+{{- with $src -}}
+<figure class="story-cover">
+  <img src="{{ . | absURL }}" alt="Featured artwork for {{ $.Title }}" width="1536" height="1024" loading="eager" fetchpriority="high">
+</figure>
+{{- end -}}
