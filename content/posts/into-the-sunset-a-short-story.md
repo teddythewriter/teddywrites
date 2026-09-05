@@ -4,7 +4,7 @@ date: 2021-09-09T18:29:15+00:00
 draft: false
 tags: ["mental health", "romance", "short story"]
 images:
-  - /images/stories/into-the-sunset.png
+  - images/stories/into-the-sunset.png
 ---
 
 It isn't easy, you know. Eventually, you'll start to see me as I see myself right now, and the feelings you have for me will fade away like they never existed in the first place.
