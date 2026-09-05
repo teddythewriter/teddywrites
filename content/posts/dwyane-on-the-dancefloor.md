@@ -3,6 +3,8 @@ title: "Dwyane on the Dancefloor"
 date: 2022-09-01T00:00:00+00:00
 draft: false
 tags: ["snippet"]
+images:
+  - /images/stories/dwyane-on-the-dancefloor.png
 ---
 
 Dwyane is still holding on to his laugh on the dancefloor. Although he's feeling a bit woozy, He's trying to process the event that just happened.

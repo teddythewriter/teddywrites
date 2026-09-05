@@ -3,6 +3,8 @@ title: "Rain and Girl - Again"
 date: 2022-10-20T00:00:00+00:00
 draft: false
 tags: ["snippet"]
+images:
+  - /images/stories/rain-and-girl.png
 ---
 
 I was caught off guard with a feeling of sudden coldness on my palm. It wasn't in the forecast, was it? I didn't even bring my umbrella. I thought to myself.

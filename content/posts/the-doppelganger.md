@@ -3,6 +3,8 @@ title: "The Doppelganger"
 date: 2022-12-24T00:00:00+00:00
 draft: false
 tags: ["snippet"]
+images:
+  - /images/stories/the-doppelganger.png
 ---
 
 Louis was practising a new sheet music given by his mentor. He was always so fond of the piano and the music. In his journey of 5 years, he kept setting milestones to overcome previous ones he set. His mentor knew this and nurtured and trained him in a way where he didn't feel overwhelmed.

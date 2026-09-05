@@ -3,6 +3,8 @@ title: "Into the sunset - A Short story"
 date: 2021-09-09T18:29:15+00:00
 draft: false
 tags: ["mental health", "romance", "short story"]
+images:
+  - /images/stories/into-the-sunset.png
 ---
 
 It isn't easy, you know. Eventually, you'll start to see me as I see myself right now, and the feelings you have for me will fade away like they never existed in the first place.
@@ -24,8 +26,6 @@ _I don't want to see you in someone else's eyes, not even yours. I see you as it
 She stopped.
 
 _You're weird. I told her as we both walked into sunset, talking about everything but love._
-
-[](https://thoughtsofanonymity.wordpress.com/wp-content/uploads/2021/09/pexels-photo-189349.jpeg)Photo by Sebastian Voortman on [Pexels.com](https://www.pexels.com/photo/body-of-water-during-golden-hour-189349/)
 
 _Hi. I texted her._
 
@@ -50,8 +50,6 @@ And I'm grateful for her. For not asking about them. Some might say that it's wr
 _Do you want to meet up later? She asked._
 
 _Sure, why not. Same place? I need some sunset in my life right now. I replied._
-
-[](https://thoughtsofanonymity.wordpress.com/wp-content/uploads/2021/09/pexels-photo-585759.jpeg)Photo by Bruno Scramgnon on [Pexels.com](https://www.pexels.com/photo/silhouette-photo-of-a-mountain-585759/)
 
 _Does love ever fade? I muttered._
 
@@ -83,8 +81,6 @@ A beautiful sunset and a beautiful soul.
 
 Maybe it isn't that bad. Maybe I'll be happy One day.
 
-[](https://thoughtsofanonymity.wordpress.com/wp-content/uploads/2021/09/pexels-photo-848573.jpeg)Photo by Samuel Theo Manat Silitonga on [Pexels.com](https://www.pexels.com/photo/silhouette-photo-of-man-with-backpack-standing-in-seashore-during-golden-hour-848573/)
-
 I woke up to a text chime on my phone.
 
 _Wake up, sleepyhead. It said._
@@ -112,8 +108,6 @@ She's right. I shouldn't be sorry for someone else, but when I feel something ab
 **A relationship that isn't a relationship.**
 
 **We both exist in it but at the same time, we don't. That's what intrigued me about her in the first place.**
-
-[](https://thoughtsofanonymity.wordpress.com/wp-content/uploads/2021/09/pexels-photo-3998365.jpg)Photo by Thu00e1i Huu1ef3nh on [Pexels.com](https://www.pexels.com/photo/silhouette-of-newly-wedded-couple-3998365/)
 
 _Hey, can I ask you something? She questioned._
 

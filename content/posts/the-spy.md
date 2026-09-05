@@ -3,6 +3,8 @@ title: "The Spy"
 date: 2022-09-06T00:00:00+00:00
 draft: false
 tags: ["snippet"]
+images:
+  - /images/stories/the-spy.png
 ---
 
 Did you call me Mr. Evans? Timmy asked the bossy figure in front of him.

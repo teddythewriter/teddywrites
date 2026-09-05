@@ -3,6 +3,8 @@ title: "The Story of Harry"
 date: 2022-09-21T00:00:00+00:00
 draft: false
 tags: ["snippet"]
+images:
+  - /images/stories/the-story-of-harry.png
 ---
 
 No, No. You don't understand. She was trying to make amends. She knew what she did was wrong and all she wanted was a chance to prove that she deserved a new life as much as the next criminal who gets one. And this city opened up like a bottomless chasm and swallowed her whole. And you still think this is fair? James was screaming in the rain. A gun in his hand and droplets of water getting mixed downstream of tears on his face.
