@@ -8,7 +8,7 @@ lastmod = "2025-05-29T09:16:51+02:00"
 show_date = true
 
 # Publication Control
-draft = false
+draft = true
 layout = "utility"
 
 # Advanced SEO

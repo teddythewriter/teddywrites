@@ -2,9 +2,11 @@
 title: "Love, Time, and Messages"
 date: 2024-12-25T17:33:40+00:00
 draft: false
+description: "A messaging glitch connects a man with someone who knows far too much about his future."
+featured: true
 tags: ["funny", "life", "relationships", "romance", "short story", "thoughts", "writing"]
 images:
-  - images/stories/love-time-and-messages.png
+  - images/stories/love-time-and-messages.webp
 ---
 
 It finally happened. It was only funny when I was theorycrafting about it, but now that it really happened, I don’t know how to handle this.

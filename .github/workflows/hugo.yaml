@@ -28,11 +28,14 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest'
+          hugo-version: '0.165.0'
           extended: true
 
       - name: Build
         run: hugo --minify
+
+      - name: Check internal links and required metadata
+        run: python scripts/check_site.py public
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

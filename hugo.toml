@@ -26,15 +26,16 @@ enableEmoji = true
 
 [params.author]
   name = "Teddy"
-  about = ""
+  about = "about"
 
 [taxonomies]
   tag = "tags"
 
 [params]
+  description = "Short fiction, personal reflections, and fragments by Teddy."
   themeColor = "#494f5c"
   accentColor = "#018472"
-  footerCopyright = "teddywrites"
+  footerHideThemeName = true
   justifyContent = false
   relatedPosts = true
   code_copy_button = true
@@ -45,6 +46,13 @@ enableEmoji = true
   readTimeSeparator = "min read"
   shareSocial = false
   socialLinks = []
+  images = ["og.png"]
+
+  [params.assets]
+    favicon = "favicon-96x96.png"
+
+  [params.schema]
+    publisherType = "Person"
 
   [params.gallery]
     enable = true
@@ -69,3 +77,8 @@ enableEmoji = true
     name = "About"
     url = "about/"
     weight = 20
+
+  [[menu.main]]
+    name = "Explore"
+    url = "tags/"
+    weight = 15

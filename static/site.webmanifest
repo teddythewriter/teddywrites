@@ -1,0 +1,21 @@
+{
+  "name": "teddywrites",
+  "short_name": "teddywrites",
+  "description": "Short fiction, personal reflections, and fragments by Teddy.",
+  "start_url": "/teddywrites/en/",
+  "display": "standalone",
+  "background_color": "#f4efe3",
+  "theme_color": "#494f5c",
+  "icons": [
+    {
+      "src": "/teddywrites/favicon-96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/teddywrites/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

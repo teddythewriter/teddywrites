@@ -1,0 +1,4 @@
+<p>
+  &copy; {{ now.Format "2006" }} <a href="{{ "" | relLangURL }}">{{ .Site.Title }}</a>
+  {{- with .OutputFormats.Get "RSS" }} · <a href="{{ "index.xml" | absLangURL }}" title="Subscribe via RSS">RSS</a>{{ end -}}
+</p>

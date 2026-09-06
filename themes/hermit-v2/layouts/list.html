@@ -5,11 +5,11 @@
 {{ define "title" }}
   {{- $permalink := .Page.RelPermalink -}}
   {{- if in $permalink "tags" -}}
-    {{- with .Site.Params.tagSymbol | default "#" }}{{ . }}{{ end -}}{{ .Title | lower }}
+    {{- with .Site.Params.tagSymbol | default "#" }}{{ . }}{{ end -}}{{ .Title | lower }} | {{ .Site.Title }}
   {{- else if in $permalink "categories" -}}
-    {{- with .Site.Params.categorySymbol | default "⊲" }}{{ . }}{{ end -}}{{ .Title | lower }}
+    {{- with .Site.Params.categorySymbol | default "⊲" }}{{ . }}{{ end -}}{{ .Title | lower }} | {{ .Site.Title }}
   {{- else -}}
-    {{ .Title }}
+    {{ .Title }} | {{ .Site.Title }}
   {{- end -}}
 {{ end }}
 
@@ -23,7 +23,7 @@
   {{- $dateFormat   := .Site.Params.dateform.ShortDate | default "Jan 2" -}}
   {{- $usesAnim     := ne false .Site.Params.usesAnimation -}}
 
-  <main class="site-main section-inner thin{{- if $usesAnim }} animated fadeIn faster{{- end -}}">
+  <main id="main-content" class="site-main section-inner thin{{- if $usesAnim }} animated fadeIn faster{{- end -}}">
 
     {{- /* ── Page heading (taxonomy-aware) ────────────────────────────────── */ -}}
     {{- if $isTag -}}
@@ -35,6 +35,14 @@
     {{- end -}}
 
     {{- with .Content }}<div class="content">{{ . }}</div>{{ end -}}
+
+    {{- if and (eq .Section "posts") (not $isTaxonomy) -}}
+    <div class="archive-filter">
+      <label for="post-filter">Find a title</label>
+      <input id="post-filter" type="search" placeholder="Search the archive…" autocomplete="off">
+      <p id="post-filter-status" aria-live="polite"></p>
+    </div>
+    {{- end -}}
 
     {{- /* ── Pinned posts (non-taxonomy pages only) ────────────────────────── */ -}}
     {{- $pinnedPages := where .Site.Pages ".Params.pin" true -}}

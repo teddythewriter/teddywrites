@@ -1,0 +1,20 @@
+{{- $description := .Params.description -}}
+{{- if not $description -}}
+  {{- if .IsHome -}}
+    {{- $description = .Site.Params.description -}}
+  {{- else if .IsPage -}}
+    {{- $description = .Summary | plainify | htmlUnescape | strings.TrimSpace | truncate 160 -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $description -}}{{- $description = .Site.Params.description -}}{{- end -}}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="{{ if or .Site.Params.siteNoIndex .Params.noIndex (in .RelPermalink "404") }}noindex, nofollow, noarchive{{ else }}index, follow{{ end }}">
+<meta name="author" content="{{ .Params.author | default .Site.Params.author.name }}">
+<meta name="description" content="{{ $description }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="manifest" href="{{ "site.webmanifest" | relURL }}">
+<link rel="icon" type="image/png" sizes="96x96" href="{{ "favicon-96x96.png" | relURL }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | relURL }}">
+<meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}">
+<meta name="theme-color" content="{{ .Site.Params.themeColor | default "#494f5c" }}">

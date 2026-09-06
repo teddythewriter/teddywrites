@@ -4,7 +4,7 @@ date: 2022-12-16T00:00:00+00:00
 draft: false
 tags: ["snippet"]
 images:
-  - images/stories/creator-of-death.png
+  - images/stories/creator-of-death.webp
 ---
 
 As I finished my final entry on the report of the Olympian experiment, I felt like a heavy burden lifting from my shoulders. But that only lasted for a mere moment when I realised what I had done.
