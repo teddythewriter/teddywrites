@@ -2,7 +2,9 @@
 title: "Revisiting Burnout"
 date: 2025-02-11T00:00:00+00:00
 draft: false
-tags: ["snippet"]
+description: "A descent through overthinking, exhaustion, and the wish for a kind of quiet that does not hurt."
+contentWarnings: ["depression", "suicidal thoughts"]
+tags: ["mental health", "writing"]
 ---
 
 I Hate Thinking

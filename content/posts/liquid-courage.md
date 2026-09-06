@@ -2,7 +2,9 @@
 title: "Liquid Courage"
 date: 2024-01-23T00:00:00+00:00
 draft: false
-tags: ["snippet"]
+description: "One drunken night of gratitude and confession moves toward a darker final decision."
+contentWarnings: ["alcohol", "implied suicide"]
+tags: ["short fiction", "mental health"]
 ---
 
 ring ring ring

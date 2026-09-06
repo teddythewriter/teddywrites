@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="{{ .Site.Language.Locale | default "en-US" }}">
+<head>
+  {{ partial "head.html" . }}
+  {{ block "head" . }}{{ end }}
+</head>
+<body class="{{ if .IsHome }}is-home{{ else }}is-inner{{ end }}">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  {{ partial "header.html" . }}
+  {{ block "main" . }}{{ end }}
+  {{ partial "site-footer.html" . }}
+  {{- $script := resources.Get "js/theme.js" | minify | fingerprint -}}
+  <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" defer></script>
+  {{- range .Params.custom_js }}{{ with resources.Get . }}{{ $custom := . | minify | fingerprint }}<script src="{{ $custom.RelPermalink }}" integrity="{{ $custom.Data.Integrity }}" defer></script>{{ end }}{{ end }}
+</body>
+</html>

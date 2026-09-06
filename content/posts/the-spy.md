@@ -2,7 +2,9 @@
 title: "The Spy"
 date: 2022-09-06T00:00:00+00:00
 draft: false
-tags: ["snippet"]
+description: "A frightened newcomer receives a dangerous assignment from a boss who trusts no one."
+contentWarnings: ["threats of violence"]
+tags: ["short fiction"]
 images:
   - images/stories/the-spy.webp
 ---

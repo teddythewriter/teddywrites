@@ -1,0 +1,7 @@
+name = "teddywrites"
+license = "MIT"
+description = "A quiet, book-like Hugo theme created for teddywrites."
+min_version = "0.146.0"
+
+[author]
+  name = "Teddy"

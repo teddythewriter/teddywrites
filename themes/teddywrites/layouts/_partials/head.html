@@ -1,0 +1,20 @@
+{{- $description := .Params.description -}}
+{{- if not $description }}{{ if .IsPage }}{{ $description = .Summary | plainify | htmlUnescape | strings.TrimSpace | truncate 160 }}{{ end }}{{ end -}}
+{{- if not $description }}{{ $description = .Site.Params.description }}{{ end -}}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="{{ if or .Site.Params.siteNoIndex .Params.noIndex (in .RelPermalink "404") }}noindex, nofollow, noarchive{{ else }}index, follow{{ end }}">
+<meta name="author" content="{{ .Params.author | default .Site.Params.author.name }}">
+<meta name="description" content="{{ $description }}">
+<link rel="canonical" href="{{ .Permalink }}">
+<link rel="manifest" href="{{ "site.webmanifest" | relURL }}">
+<link rel="icon" type="image/png" sizes="96x96" href="{{ "favicon-96x96.png" | relURL }}">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | relURL }}">
+<meta name="theme-color" content="#f4efe3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#171a19" media="(prefers-color-scheme: dark)">
+<title>{{ if .IsHome }}{{ .Site.Title }} — {{ .Site.Params.description }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+{{ template "_internal/opengraph.html" . }}
+{{ template "_internal/twitter_cards.html" . }}
+{{ partial "schema.html" . }}
+{{ range .AlternativeOutputFormats }}<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ $.Title }}">{{ end }}
+{{ $style := resources.Get "css/main.css" | minify | fingerprint }}<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">

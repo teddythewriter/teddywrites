@@ -1,2 +1,0 @@
-{{- $override := resources.Get "css/override.css" | minify | fingerprint -}}
-<link rel="stylesheet" href="{{ $override.Permalink }}" integrity="{{ $override.Data.Integrity }}" crossorigin="anonymous">

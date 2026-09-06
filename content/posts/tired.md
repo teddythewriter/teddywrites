@@ -2,7 +2,8 @@
 title: "Tired"
 date: 2023-02-23T00:00:00+00:00
 draft: false
-tags: ["snippet"]
+description: "A weary note about creative silence, lost closeness, and wishing the timing had been different."
+tags: ["mental health", "relationships"]
 ---
 
 I'm a little bit tired.

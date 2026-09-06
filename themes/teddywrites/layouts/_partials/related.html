@@ -1,0 +1,10 @@
+{{- $related := where .Site.RegularPages "Params.tags" "intersect" .Params.tags -}}
+{{- $related = where $related "RelPermalink" "ne" .RelPermalink -}}
+{{- $related = first 3 $related -}}
+{{- with $related }}
+<aside class="related-writing" aria-labelledby="related-title">
+  <p class="eyebrow">Continue reading</p>
+  <h2 id="related-title">Along the same thread</h2>
+  <div class="related-grid">{{ range . }}<a href="{{ .RelPermalink }}"><small>{{ .Date.Format "2006" }}</small><strong>{{ .Title }}</strong>{{ with .Description }}<span>{{ . }}</span>{{ end }}</a>{{ end }}</div>
+</aside>
+{{- end }}

@@ -4,7 +4,7 @@ date: 2024-12-25T17:33:40+00:00
 draft: false
 description: "A messaging glitch connects a man with someone who knows far too much about his future."
 featured: true
-tags: ["funny", "life", "relationships", "romance", "short story", "thoughts", "writing"]
+tags: ["short fiction", "speculative fiction", "relationships"]
 images:
   - images/stories/love-time-and-messages.webp
 ---
@@ -59,7 +59,7 @@ In one chat, the most recent one, she was far more flirty and familiar. It felt 
 
 **Her** : That’s it? Just okay? No questions like “What’s a time manipulator?” or “When are you from?” Nothing?
 
-**Me** : I mean, if it’s something related to time, I’ll eventually know about it, right? Less I know is better?
+**Me** : I mean, if it’s something related to time, I’ll eventually know about it, right? The less I know, the better?
 
 **Her** : Smart boy. That’s why I married you.
 

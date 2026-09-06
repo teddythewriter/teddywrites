@@ -2,7 +2,9 @@
 title: "The Grind"
 date: 2020-10-26T11:55:36+00:00
 draft: false
-tags: []
+description: "A direct argument for choosing the difficult work of living when giving up feels easier."
+contentWarnings: ["suicide"]
+tags: ["mental health", "reflections"]
 ---
 
 Dying is easy.

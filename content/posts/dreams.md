@@ -2,7 +2,8 @@
 title: "Dreams"
 date: 2023-01-24T00:00:00+00:00
 draft: false
-tags: ["snippet"]
+description: "A short challenge to the compromises that quietly turn ambition into routine."
+tags: ["reflections"]
 ---
 
 Do you remember the first time you let someone pay you to suppress your dreams?

@@ -1,6 +1,0 @@
-{{- with .Params.description }}<p class="post-deck">{{ . }}</p>{{- end }}
-<p class="post-byline">{{- partial "svg.html" (dict "context" . "name" "author") -}}<a href="{{ "about/" | relLangURL }}">{{ .Params.author | default .Site.Params.author.name }}</a></p>
-{{- with .Params.tags -}}
-<p class="post-tags" aria-label="Themes">{{- partial "svg.html" (dict "context" $ "name" "posts_single_tags") -}}{{- range . -}}<span class="tag"><a href="{{ "tags/" | absLangURL }}{{ . | urlize }}">{{ . }}</a></span>{{- end -}}</p>
-{{- end -}}
-<p class="post-reading">{{- partial "svg.html" (dict "context" . "name" "posts_single_wordcount") -}}{{ .ReadingTime }} min read · {{ .WordCount }} words</p>

@@ -2,7 +2,8 @@
 title: "Metaphorical Web"
 date: 2022-12-15T00:00:00+00:00
 draft: false
-tags: ["snippet"]
+description: "A self-made web of validation and constraint becomes both prison and comfort."
+tags: ["mental health", "reflections"]
 ---
 
 I'm stuck.

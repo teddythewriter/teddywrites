@@ -1,8 +1,9 @@
 ---
-title: "Talking with myself"
+title: "Talking with Myself"
 date: 2025-02-01T00:00:00+00:00
 draft: false
-tags: ["snippet"]
+description: "An internal conversation turns self-criticism into an uncomfortable form of honesty."
+tags: ["mental health", "reflections"]
 ---
 
 Hi, It's me.

@@ -2,7 +2,9 @@
 title: "Dose of Reality"
 date: 2025-02-04T00:00:00+00:00
 draft: false
-tags: ["snippet"]
+description: "An anxious spiral about appearing functional while doubt waits for the next quiet moment."
+contentWarnings: ["anxiety", "depression"]
+tags: ["reflections", "mental health"]
 ---
 
 Have you ever been hit by a sudden dose of reality?

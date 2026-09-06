@@ -1,8 +1,9 @@
 ---
-title: "Why do you keep coming back to me?"
+title: "Why Do You Keep Coming Back to Me?"
 date: 2018-11-13T19:49:14+00:00
 draft: false
-tags: []
+description: "A confrontation strips away the difference between love, pity, and the need for validation."
+tags: ["short fiction", "relationships"]
 ---
 
 "I Loved you." She insisted.

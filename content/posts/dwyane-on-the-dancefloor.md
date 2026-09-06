@@ -1,8 +1,10 @@
 ---
-title: "Dwyane on the Dancefloor"
+title: "Dwyane on the Dance Floor"
 date: 2022-09-01T00:00:00+00:00
 draft: false
-tags: ["snippet"]
+description: "A wounded man meets the end of a long game of violence with one final, bitter laugh."
+contentWarnings: ["stabbing", "death"]
+tags: ["short fiction"]
 images:
   - images/stories/dwyane-on-the-dancefloor.webp
 ---

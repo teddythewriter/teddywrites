@@ -2,7 +2,9 @@
 title: "The Story of Harry"
 date: 2022-09-21T00:00:00+00:00
 draft: false
-tags: ["snippet"]
+description: "A man in grief turns a gun on himself while his friend tries to pull him back."
+contentWarnings: ["suicide", "gun violence", "grief"]
+tags: ["short fiction", "grief", "mental health"]
 images:
   - images/stories/the-story-of-harry.webp
 ---

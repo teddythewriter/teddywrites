@@ -2,7 +2,8 @@
 title: "One Last Time"
 date: 2025-02-16T00:00:00+00:00
 draft: false
-tags: ["snippet"]
+description: "A difficult conversation asks whether fear of abandonment deserves one more chance."
+tags: ["relationships", "short fiction"]
 ---
 
 Hey, how are you?

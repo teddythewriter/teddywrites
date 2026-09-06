@@ -1,8 +1,9 @@
 ---
-title: "I feel nothing"
+title: "I Feel Nothing"
 date: 2020-08-29T23:10:34+00:00
 draft: false
-tags: []
+description: "A writer questions whether romantic words can mean anything when the feeling behind them has gone."
+tags: ["writing", "mental health"]
 ---
 
 I can write thousands of stories filled with cheap romance and yet feel nothing of it. The words i write seems fake to me but i find people making sense of it. In reality it's just a desperate attempt to create a feeling that I have lost throughout the time. It used to be so genuine and calming but now it feels forced. Sometimes i just want to believe that it is possible to lose feelings and be apathetic, i really do. But why does it feel like my heart breaks every time when something goes bad.  

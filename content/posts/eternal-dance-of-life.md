@@ -2,7 +2,8 @@
 title: "Eternal Dance of Life"
 date: 2025-02-02T00:00:00+00:00
 draft: false
-tags: ["snippet"]
+description: "A return to familiar love, familiar fear, and the cycle of breaking all over again."
+tags: ["relationships", "mental health", "reflections"]
 ---
 
 Hi.

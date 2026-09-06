@@ -1,8 +1,10 @@
 ---
-title: "Dear 17 year old me"
+title: "Dear 17-Year-Old Me"
 date: 2020-08-15T06:54:58+00:00
 draft: false
-tags: ["note"]
+description: "A letter across time about innocence, depression, and the person survival created."
+contentWarnings: ["depression"]
+tags: ["reflections", "mental health"]
 ---
 
 Dear 17 year old me,

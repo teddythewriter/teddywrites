@@ -2,7 +2,9 @@
 title: "Death"
 date: 2022-11-09T00:00:00+00:00
 draft: false
-tags: ["snippet"]
+description: "A dead narrator watches time carry his family, friendships, and memory beyond the grave."
+contentWarnings: ["death", "post-mortem imagery"]
+tags: ["short fiction", "grief"]
 ---
 
 I have died,

@@ -2,7 +2,9 @@
 title: "Creator of Death"
 date: 2022-12-16T00:00:00+00:00
 draft: false
-tags: ["snippet"]
+description: "A scientist confronts what his artificial children may become—and who intends to own them."
+contentWarnings: ["violence"]
+tags: ["short fiction", "speculative fiction"]
 images:
   - images/stories/creator-of-death.webp
 ---

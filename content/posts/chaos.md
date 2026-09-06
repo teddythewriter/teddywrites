@@ -2,7 +2,8 @@
 title: "Chaos"
 date: 2025-01-25T00:00:00+00:00
 draft: false
-tags: ["snippet"]
+description: "A quiet argument with the fear that follows an unexpectedly comforting connection."
+tags: ["relationships", "reflections"]
 ---
 
 Is she chaotic?

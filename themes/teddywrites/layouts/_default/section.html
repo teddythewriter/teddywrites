@@ -1,0 +1,9 @@
+{{ define "main" }}
+<main id="main-content" class="page-shell archive-page">
+  <header class="page-header archive-header"><p class="eyebrow">The complete collection</p><h1>{{ .Title }}</h1>{{ with .Content }}<div class="page-deck prose">{{ . }}</div>{{ end }}</header>
+  {{ if eq .Section "posts" }}<div class="archive-filter"><label for="post-filter">Find an entry</label><input id="post-filter" type="search" placeholder="Search titles and themes…" autocomplete="off"><p id="post-filter-status" aria-live="polite"></p></div>{{ end }}
+  {{ range .Pages.GroupByDate "2006" }}<section class="year-group"><h2>{{ .Key }}</h2><ol class="archive-list">
+    {{ range .Pages.ByDate.Reverse }}<li class="archive-item" data-search="{{ .Title }} {{ delimit .Params.tags " " }}"><a href="{{ .RelPermalink }}"><span>{{ .Title }}</span><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2" }}</time></a>{{ with .Description }}<p>{{ . }}</p>{{ end }}</li>{{ end }}
+  </ol></section>{{ end }}
+</main>
+{{ end }}

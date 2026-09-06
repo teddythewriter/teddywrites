@@ -2,7 +2,8 @@
 title: "Unwritten Story"
 date: 2025-01-31T00:00:00+00:00
 draft: false
-tags: ["snippet"]
+description: "Two people wait for the other to begin a story that fear keeps unwritten."
+tags: ["relationships", "reflections"]
 ---
 
 There's an unwritten story about us. The reason it's not written is that either one of us is afraid to pick up the pen and write it. We've both been so close to picking up that pen but we'd rather let the other one start the story. And until that moment, we're going to have this infinite staredown at each other, a metaphorical staredown where nobody will win.

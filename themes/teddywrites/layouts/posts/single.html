@@ -1,0 +1,22 @@
+{{ define "main" }}
+<main id="main-content" class="page-shell story-page">
+  <article>
+    <header class="story-header">
+      <a class="back-link" href="{{ "posts/" | relLangURL }}">← Archive</a>
+      <p class="eyebrow">{{ with index .Params.tags 0 }}{{ . }}{{ else }}From the archive{{ end }}</p>
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="story-deck">{{ . }}</p>{{ end }}
+      <div class="story-meta"><span>By <a href="{{ "about/" | relLangURL }}">{{ .Params.author | default .Site.Params.author.name }}</a></span><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time><span>{{ .ReadingTime }} min read</span></div>
+      {{ with .Params.contentWarnings }}<aside class="content-note"><strong>Content note</strong><span>{{ delimit . ", " }}.</span></aside>{{ end }}
+    </header>
+    {{ partial "story-cover.html" . }}
+    <div class="prose story-prose">{{ .Content }}</div>
+    {{ with .Params.tags }}<footer class="story-tags" aria-label="Themes">{{ range . }}<a href="{{ "tags/" | absLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}</footer>{{ end }}
+    {{ partial "related.html" . }}
+  </article>
+  <nav class="story-pagination" aria-label="Adjacent entries">
+    {{ with .NextInSection }}<a href="{{ .RelPermalink }}"><small>Newer</small><span>← {{ .Title }}</span></a>{{ end }}
+    {{ with .PrevInSection }}<a class="next" href="{{ .RelPermalink }}"><small>Older</small><span>{{ .Title }} →</span></a>{{ end }}
+  </nav>
+</main>
+{{ end }}

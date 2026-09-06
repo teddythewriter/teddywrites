@@ -2,7 +2,9 @@
 title: "Alone and Depressed"
 date: 2020-08-18T16:15:14+00:00
 draft: false
-tags: ["note"]
+description: "A raw fragment about isolation, invisible pain, and struggling to survive yourself."
+contentWarnings: ["depression"]
+tags: ["mental health", "reflections"]
 ---
 
 I just want to talk to someone,  

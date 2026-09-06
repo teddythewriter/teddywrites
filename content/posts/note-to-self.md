@@ -2,7 +2,8 @@
 title: "Note to Self"
 date: 2025-01-26T00:00:00+00:00
 draft: false
-tags: ["snippet"]
+description: "A reflection on love, inaction, responsibility, and the moments that quietly reshape a life."
+tags: ["relationships", "reflections"]
 ---
 
 The magic of life is that you never truly realize when you've fallen in love—or when you've fallen out of it. Some days, you hold onto hope, believing that if you just try a little harder, things will fall into place. You convince yourself that happiness is within reach, just one decision away. And then, one day, you wake up and realize that no matter how much you hoped, no matter how much effort you put in, some things simply aren't meant to last.

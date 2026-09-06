@@ -1,0 +1,8 @@
+{{- $description := .Description | default .Site.Params.description -}}
+{{- if .IsHome -}}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@type" "WebSite" "name" .Site.Title "description" $description "url" .Permalink | jsonify | safeJS }}</script>
+{{- else if and .IsPage (eq .Section "posts") -}}
+{{- $data := dict "@context" "https://schema.org" "@type" "BlogPosting" "headline" .Title "description" (.Description | default (.Summary | plainify | truncate 160)) "datePublished" .PublishDate "dateModified" .Lastmod "wordCount" .WordCount "url" .Permalink "author" (dict "@type" "Person" "name" (.Params.author | default .Site.Params.author.name)) -}}
+{{- with .Params.images }}{{ $data = merge $data (dict "image" ((index . 0) | absURL)) }}{{ end -}}
+<script type="application/ld+json">{{ $data | jsonify | safeJS }}</script>
+{{- end }}

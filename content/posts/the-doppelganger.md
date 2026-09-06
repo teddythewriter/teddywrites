@@ -4,31 +4,31 @@ date: 2022-12-24T00:00:00+00:00
 draft: false
 description: "An unemployed pianist finds companionship—and something stranger—in the music next door."
 featured: true
-tags: ["snippet"]
+tags: ["short fiction", "speculative fiction"]
 images:
   - images/stories/the-doppelganger.webp
 ---
 
-Louis was practising a new sheet music given by his mentor. He was always so fond of the piano and the music. In his journey of 5 years, he kept setting milestones to overcome previous ones he set. His mentor knew this and nurtured and trained him in a way where he didn't feel overwhelmed.
+Louis was practising a new piece of sheet music given to him by his mentor. He had always been fond of the piano and its music. Throughout his five-year journey, he kept setting new milestones to surpass the ones before. His mentor knew this and trained him without making him feel overwhelmed.
 
-Louis was happy with what he was given, He always wanted to play a piece by Liszt. As he sat down to play he could hear faint piano music coming from next door. He stopped for a moment and listened. It was as he guessed, someone playing a piano. He could hear the faint tune of river flows in you.
+Louis was happy with what he had been given. He had always wanted to play a piece by Liszt. As he sat down to play, he heard faint piano music coming from next door. He stopped for a moment and listened. It was as he had guessed: someone was playing a piano. He could make out the faint tune of “River Flows in You.”
 
-As he was listening to the music, it stopped as the one who was playing expected him to continue where he left off. So, he did. Louis was enjoying the tune. It was something he kept playing over and over again so he knew it by memory. While he was concentrating on playing he thought of what happened earlier and stopped his playing. In a mere moment, it was picked off by the person who was playing in the other room.
+As he listened, the music stopped, as if the player expected him to continue where they had left off. So he did. Louis enjoyed the tune. He had played it over and over again and knew it by heart. While concentrating, he thought about what had happened earlier and stopped. A moment later, the person in the other room picked it up.
 
-Louis was dueting off with a complete stranger and it made him ecstatic.
+Louis was duetting with a complete stranger, and it made him ecstatic.
 
-After the song was done, Louis went to bed thinking of what happened. Although he forgot about the sheet music his mentor gave him, He has a newfound love for the stranger on the other wall. As he drifts off to sleep, he could hear the music serenade through his ears.
+After the song ended, Louis went to bed thinking about what had happened. Although he had forgotten about the sheet music his mentor gave him, he had found a new affection for the stranger on the other side of the wall. As he drifted off to sleep, he could hear the music serenading him.
 
-Louis woke up to the warmth of the sun. He was laid off from his job a few days ago and his only coping mechanism was playing piano. It kept his mind off of everything else as he job hunted on the internet. After another disappointing search, Louis sat down to play, this time he could hear Clair de Lune, another one of his favourites. As before, it quickly turned out to be a back and forth play off between the stranger and Louis. He enjoyed every second of this new experience.
+Louis woke to the warmth of the sun. He had been laid off a few days earlier, and playing the piano was his only way of coping. It kept his mind off everything else as he searched for jobs online. After another disappointing search, Louis sat down to play. This time, he heard “Clair de Lune,” another of his favourites. As before, it quickly became a back-and-forth between Louis and the stranger. He enjoyed every second of it.
 
-After the play, Louis stepped out for a bit of fresh air, as he passed the next door where his playing partner lives, he wanted to knock on the door. But something stopped him from doing it, maybe it was the anonymity he has, not knowing who it was that brought another interesting addition to Louis's playtime. He walked outside to breathe in some fresh air as he enjoyed the past two days of his playtime.
+After they finished, Louis stepped out for some fresh air. As he passed the door of his playing partner, he wanted to knock. But something stopped him—perhaps it was the anonymity, not knowing who had brought this unexpected pleasure into the past two days. He left the building and kept walking.
 
-When he was coming back to his room, he saw the door ajar of his neighbour.
+When he returned, he saw that his neighbour's door was ajar.
 
 "Maybe a peek won't hurt?" Louis thought to himself.
 
-He knocked on the door and announced his presence as he walked inside. But, there was no sign of someone living inside the room. As he opened the door to the room adjacent to his room on the other side. Louis was shocked with what he saw.
+He knocked and announced himself as he walked inside, but there was no sign that anyone lived there. When he opened the door to the room beside his own, Louis was shocked by what he saw.
 
-It was like a Mirrored room, it was exactly like Louis's room but without him in it. He rushed back outside in disbelief. He went to his room and sat on the piano stool thinking about what he saw. As he was trying to figure it out, he heard a faint piano music from the other side, this time, it was a new tune he had never heard before. Curious, he took the sheet music he was given by his mentor a few days ago, "Der Doppelgänger" it read on top of the sheet. On top of the piano music, he could hear the singing voice of someone.
+It was like a mirrored room—exactly like Louis's, but without him in it. He rushed outside in disbelief, returned to his room, and sat on the piano stool, trying to understand what he had seen. Then he heard faint piano music from the other side. This time, it was a new tune he had never heard before. Curious, he picked up the sheet music his mentor had given him a few days earlier. “Der Doppelgänger,” it read at the top. Above the piano, he could hear someone singing.
 
-Louis didn't know what he was experiencing. He went pale with everything that happened in the last few moments. If only he knew what was behind this truly magnificent piece that was playing inside his head.
+Louis didn't know what he was experiencing. He went pale as the last few moments replayed in his mind. If only he knew what lay behind the magnificent piece now playing inside his head.

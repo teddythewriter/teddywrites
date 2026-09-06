@@ -1,0 +1,6 @@
+{{ define "main" }}
+<main id="main-content" class="page-shell archive-page">
+  <header class="page-header archive-header"><p class="eyebrow">Explore by theme</p><h1>{{ .Title }}</h1><p class="page-deck">{{ len .Pages }} {{ if eq (len .Pages) 1 }}entry{{ else }}entries{{ end }} gathered around this thread.</p></header>
+  <ol class="story-list">{{ range .Pages.ByDate.Reverse }}<li><a href="{{ .RelPermalink }}"><span>{{ .Title }}</span><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006" }}</time></a>{{ with .Description }}<p>{{ . }}</p>{{ end }}</li>{{ end }}</ol>
+</main>
+{{ end }}

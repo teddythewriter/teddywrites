@@ -1,0 +1,6 @@
+{{ define "main" }}
+<main id="main-content" class="page-shell explore-page">
+  <header class="page-header archive-header"><p class="eyebrow">Find your way in</p><h1>Explore</h1><p class="page-deck">Follow the ideas that recur across the archive.</p></header>
+  <div class="taxonomy-grid">{{ range .Data.Terms.ByCount }}<a href="{{ .Page.RelPermalink }}"><span>{{ .Page.Title }}</span><small>{{ .Count }} {{ if eq .Count 1 }}entry{{ else }}entries{{ end }}</small></a>{{ end }}</div>
+</main>
+{{ end }}
