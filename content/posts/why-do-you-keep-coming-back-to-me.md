@@ -4,6 +4,8 @@ date: 2018-11-13T19:49:14+00:00
 draft: false
 description: "A confrontation strips away the difference between love, pity, and the need for validation."
 tags: ["short fiction", "relationships"]
+images:
+  - images/stories/why-do-you-keep-coming-back-to-me.png
 ---
 
 "I Loved you." She insisted.

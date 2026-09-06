@@ -4,6 +4,8 @@ date: 2025-02-16T00:00:00+00:00
 draft: false
 description: "A difficult conversation asks whether fear of abandonment deserves one more chance."
 tags: ["relationships", "short fiction"]
+images:
+  - images/stories/one-last-time.png
 ---
 
 Hey, how are you?

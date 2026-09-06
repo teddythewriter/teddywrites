@@ -5,6 +5,8 @@ draft: false
 description: "A dead narrator watches time carry his family, friendships, and memory beyond the grave."
 contentWarnings: ["death", "post-mortem imagery"]
 tags: ["short fiction", "grief"]
+images:
+  - images/stories/death.png
 ---
 
 I have died,
