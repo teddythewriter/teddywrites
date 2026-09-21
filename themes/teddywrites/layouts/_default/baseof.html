@@ -12,5 +12,10 @@
   {{- $script := resources.Get "js/theme.js" | minify | fingerprint -}}
   <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" defer></script>
   {{- range .Params.custom_js }}{{ with resources.Get . }}{{ $custom := . | minify | fingerprint }}<script src="{{ $custom.RelPermalink }}" integrity="{{ $custom.Data.Integrity }}" defer></script>{{ end }}{{ end }}
+  {{ if not hugo.IsServer }}
+  <!-- Cloudflare Web Analytics -->
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"de3cc2f1554b4567808d00cd2997123a"}'></script>
+  <!-- End Cloudflare Web Analytics -->
+  {{ end }}
 </body>
 </html>
