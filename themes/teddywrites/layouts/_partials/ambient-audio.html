@@ -1,0 +1,12 @@
+<aside class="ambient-player" aria-label="Reading ambience" hidden>
+  <button type="button" class="ambient-toggle" aria-pressed="false">Play rain</button>
+  <label class="sr-only" for="ambient-volume">Rain volume</label>
+  <input id="ambient-volume" type="range" min="0" max="100" value="20" aria-valuetext="20 percent">
+  <a class="ambient-credit" href="https://opengameart.org/content/rain-loopable" target="_blank" rel="noopener noreferrer" aria-label="Rain recording by Ylmir, CC0 (opens in new tab)">Credits</a>
+  <span class="sr-only" role="status" id="ambient-status"></span>
+  <audio id="ambient-audio" loop preload="none"><source src="{{ "audio/rain.mp3" | relURL }}" type="audio/mpeg"></audio>
+</aside>
+{{ $css := resources.Get "css/ambient.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{ $js := resources.Get "js/ambient.js" | minify | fingerprint }}
+<script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>

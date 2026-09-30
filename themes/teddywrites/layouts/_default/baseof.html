@@ -9,6 +9,7 @@
   {{ partial "header.html" . }}
   {{ block "main" . }}{{ end }}
   {{ partial "site-footer.html" . }}
+  {{ partial "ambient-audio.html" . }}
   {{- $script := resources.Get "js/theme.js" | minify | fingerprint -}}
   <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" defer></script>
   {{- range .Params.custom_js }}{{ with resources.Get . }}{{ $custom := . | minify | fingerprint }}<script src="{{ $custom.RelPermalink }}" integrity="{{ $custom.Data.Integrity }}" defer></script>{{ end }}{{ end }}
