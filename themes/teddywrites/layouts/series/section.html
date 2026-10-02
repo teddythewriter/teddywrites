@@ -1,0 +1,8 @@
+{{ define "main" }}
+<main id="main-content" class="page-shell archive-page">
+  <header class="page-header archive-header"><p class="eyebrow">Read in order</p><h1>{{ .Title }}</h1><div class="page-deck prose">{{ .Content }}</div></header>
+  <ol class="archive-list">
+    {{ range .RegularPages.ByTitle }}<li class="archive-item"><a href="{{ .RelPermalink }}"><span>{{ .Title }}</span><small>{{ .Params.seriesStatus }}</small></a>{{ with .Description }}<p>{{ . }}</p>{{ end }}</li>{{ end }}
+  </ol>
+</main>
+{{ end }}

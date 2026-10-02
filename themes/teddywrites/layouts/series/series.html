@@ -1,0 +1,12 @@
+{{ define "main" }}
+<main id="main-content" class="page-shell story-page">
+  <article>
+  <header class="story-header"><a class="back-link" href="{{ "series/" | relLangURL }}">← Stories in Parts</a><p class="eyebrow">{{ .Params.seriesStatus }}</p><h1>{{ .Title }}</h1><div class="story-deck">{{ .Content }}</div></header>
+  {{ partial "story-cover.html" . }}
+  {{ $chapters := sort (where .Site.RegularPages "Params.seriesPage" .Path) "Params.part" }}
+  <section class="prose" aria-labelledby="chapters-heading"><h2 id="chapters-heading">Chapters</h2><ol>
+  {{ range $chapters }}<li><a href="{{ .RelPermalink }}">Part {{ .Params.part }}</a>{{ with .Description }} — {{ . }}{{ end }}</li>{{ end }}
+  </ol>{{ if eq .Params.seriesStatus "Ongoing" }}<p>This story is ongoing. More chapters will appear here as they are published.</p>{{ end }}</section>
+  </article>
+</main>
+{{ end }}

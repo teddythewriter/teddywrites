@@ -1,0 +1,11 @@
+{{ with .Params.seriesPage }}
+  {{ $series := $.Site.GetPage . }}
+  {{ $chapters := sort (where $.Site.RegularPages "Params.seriesPage" .) "Params.part" }}
+  <nav class="story-pagination" aria-label="Chapter navigation">
+    {{ range $index, $chapter := $chapters }}{{ if eq $chapter.RelPermalink $.RelPermalink }}
+      {{ if gt $index 0 }}{{ with index $chapters (sub $index 1) }}<a href="{{ .RelPermalink }}" rel="prev"><small>Previous chapter</small><span>← Part {{ .Params.part }}</span></a>{{ end }}{{ end }}
+      {{ with $series }}<a href="{{ .RelPermalink }}"><small>{{ .Title }}</small><span>All chapters</span></a>{{ end }}
+      {{ if lt (add $index 1) (len $chapters) }}{{ with index $chapters (add $index 1) }}<a class="next" href="{{ .RelPermalink }}" rel="next"><small>Next chapter</small><span>Part {{ .Params.part }} →</span></a>{{ end }}{{ end }}
+    {{ end }}{{ end }}
+  </nav>
+{{ end }}

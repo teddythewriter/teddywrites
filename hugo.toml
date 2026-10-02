@@ -57,6 +57,11 @@ enableEmoji = true
 [menu]
 
   [[menu.main]]
+    name = "Series"
+    url = "series/"
+    weight = 12
+
+  [[menu.main]]
     name = "Posts"
     url = "posts/"
     weight = 10
