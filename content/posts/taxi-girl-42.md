@@ -1,5 +1,5 @@
 ---
-title: "Taxi Girl #42"
+title: "Taxi Girl"
 date: 2026-09-30T00:00:00+05:30
 draft: false
 description: "A café meeting, a borrowed moment, and the quiet hope of an unattainable love."
