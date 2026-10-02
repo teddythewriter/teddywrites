@@ -1,6 +1,6 @@
 ---
 title: "All the Time Between Us"
-layout: "series"
+layout: "story-series"
 description: "A missed bus brings two people together. An ordinary evening leaves an unexpected question."
 seriesStatus: "Ongoing"
 images: ["images/stories/all-the-time-between-us.png"]
