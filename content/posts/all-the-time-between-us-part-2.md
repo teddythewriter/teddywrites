@@ -13,11 +13,11 @@ images: ["images/stories/all-the-time-between-us.png"]
 
 “At the building where you work.”
 
-I looked at her again, trying to place her behind a desk or in the lift. There were six floors. I barely knew everyone on mine.
+I looked at her again, trying to place her behind a desk or in the lift. There were thirty floors. I barely knew everyone on mine.
 
 “Do you work there?”
 
-“I used to work downstairs. At the printing place.”
+“I used to work downstairs. At the printing shop.”
 
 “The one next to the pharmacy?”
 
@@ -37,7 +37,7 @@ It had closed some time the previous year. There was a phone repair shop there n
 
 “You were usually in a hurry.”
 
-I thought of the mornings I’d arrived with documents on my phone and five minutes to spare. I would stand at the counter checking the time while someone opened the attachment, adjusted the margins, found more paper.
+I thought of all the mornings I’d arrived with documents on my phone and five minutes to spare. I would stand at the counter checking the time while someone opened the attachment, adjusted the margins, found more paper.
 
 “That sounds like me.”
 
@@ -47,13 +47,13 @@ I was relieved to have an explanation. Then I felt uncomfortable about how relie
 
 “So that’s how you know my name.”
 
-“It was on things you brought in.”
+“Yes, It was on things you brought in.”
 
 “Right.”
 
 She let me sit with that for a moment.
 
-“You don’t have to remember me.”
+“You don’t have to remember me, It's okay.”
 
 “I’m trying to.”
 
@@ -61,17 +61,17 @@ She let me sit with that for a moment.
 
 There was a faint smile on her face. I looked away before she could catch me studying her again.
 
-A woman with two shopping bags stopped beside the shelter. I moved my bag to make room, but she stayed near the kerb, watching for her bus.
+A woman with two shopping bags stopped beside the shelter. I moved my bag to make room, but she stayed near the pavement, watching for her bus.
 
 “Were you there when they had that enormous printer?” I asked. “The one that took up half the shop?”
 
-“It only looked enormous because the shop was tiny.”
+“Nooo, It only looked enormous because the shop was tiny.”
 
 “It was always broken.”
 
 “It jammed.”
 
-“Every time I came in.”
+“Every time I came in?”
 
 “People used to pull at the paper instead of waiting for someone to help.”
 
@@ -79,7 +79,7 @@ I glanced at her.
 
 “I did that once.”
 
-“Yes.”
+“Yes, You Did.”
 
 For the first time, she looked directly at me with something close to satisfaction.
 
@@ -101,7 +101,7 @@ I remembered the paper coming away in my hand. A strip had remained between the 
 
 She nodded solemnly, and I laughed.
 
-The woman at the kerb stepped forward as a bus approached. It slowed just long enough for her to climb aboard. When it pulled away, a warm gust of exhaust reached the bench.
+The woman at the pavement stepped forward as a bus approached. It slowed just long enough for her to climb aboard. When it pulled away, a warm gust of exhaust reached the bench.
 
 “How long were you there?” I asked.
 
@@ -111,7 +111,7 @@ The woman at the kerb stepped forward as a bus approached. It slowed just long e
 
 “The blue folder.”
 
-I turned.
+I turned in a little bit of surprise and awe.
 
 “You remember that?”
 
@@ -129,7 +129,7 @@ She looked towards the shop across the road.
 
 “Was that you?”
 
-“I handed it to Mr Perera.”
+“Maybe.”
 
 “I still have it.”
 
@@ -165,7 +165,7 @@ I took a moment.
 
 She waited.
 
-“My dad had been in hospital. My sister sent a message to say they were letting him go home.”
+“My dad had been in hospital. My sister sent a message to say they discharged him.”
 
 “Oh.”
 
@@ -223,7 +223,7 @@ Something in the way she said it made me wonder how often she had thought about 
 
 “I was already here.”
 
-I looked up at the roof. There was a brown stain where yesterday’s water had found its way through.
+I looked up at the roof. There was a brown stain where yesterdays water had found its way through.
 
 “You picked a better spot than I did.”
 
@@ -271,7 +271,7 @@ Headlights appeared beyond the junction.
 
 Imaya leaned forward.
 
-“The 138.”
+“The 143.”
 
 The bus was almost empty. I could see a whole row of vacant window seats. At this hour, that rarely happened.
 
