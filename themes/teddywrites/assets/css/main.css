@@ -13,9 +13,10 @@
   --measure: 690px;
   --wide: 1120px;
 }
-.language-tabs { display: flex; gap: .25rem; width: fit-content; margin: 1.4rem auto 0; padding: .25rem; border: 1px solid var(--rule); border-radius: 999px; background: var(--paper-raised); }
-.language-tabs a { display: flex; align-items: center; justify-content: center; min-height: 44px; min-width: 105px; padding: .45rem 1.2rem; border-radius: 999px; color: var(--muted); font-size: .9rem; }
-.language-tabs a[aria-current] { color: var(--paper-raised); background: var(--sage-dark); }
+.lang-switch { display: flex; gap: .15rem; margin-left: 1.6rem; padding: .15rem; border: 1px solid var(--rule); border-radius: 999px; font-size: .74rem; }
+.lang-switch a { display: flex; align-items: center; justify-content: center; min-height: 30px; min-width: 38px; padding: .1rem .6rem; border-radius: 999px; color: var(--muted); }
+.lang-switch a:hover { color: var(--ink); }
+.lang-switch a[aria-current] { color: var(--paper-raised); background: var(--sage-dark); }
 :lang(si) { --sinhala: "Nirmala UI", "Iskoola Pota", "Noto Sans Sinhala", "Sinhala Sangam MN", "Sinhala MN", sans-serif; --serif: var(--sinhala); --sans: var(--sinhala); font-family: var(--sinhala); letter-spacing: normal; }
 .story-prose:lang(si), .page-deck:lang(si) { line-height: 2; }
 .archive-header h1:lang(si), .story-header h1:lang(si) { line-height: 1.5; letter-spacing: normal; font-size: clamp(2.3rem, 7vw, 4.5rem); }
@@ -127,6 +128,9 @@ h1, h2, h3 { font-family: var(--serif); letter-spacing: -.035em; line-height: 1.
   .primary-nav { position: absolute; top: 68px; left: 0; right: 0; display: none; flex-direction: column; gap: 0; margin: 0; padding: .7rem 4%; border-bottom: 1px solid var(--rule); background: var(--paper); }
   .primary-nav.is-open { display: flex; }
   .primary-nav a { min-height: 44px; padding: .7rem 0; }
+  .lang-switch { order: -1; margin-left: auto; }
+  .site-brand { order: -2; }
+  .menu-toggle { margin-left: .4rem; }
   .featured-grid, .related-grid { grid-template-columns: 1fr; }
   .section-heading-row { align-items: flex-start; flex-direction: column; }
   .year-group { grid-template-columns: 1fr; gap: .6rem; }

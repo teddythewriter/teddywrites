@@ -5,6 +5,6 @@
     <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
       {{ range .Site.Menus.main }}<a href="{{ .URL | relLangURL }}"{{ if $.IsMenuCurrent "main" . }} aria-current="page"{{ end }}>{{ .Name }}</a>{{ end }}
     </nav>
+    {{ partial "language-tabs.html" . }}
   </div>
 </header>
-{{ partial "language-tabs.html" . }}
