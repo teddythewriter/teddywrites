@@ -1,5 +1,6 @@
 {{- $related := where .Site.RegularPages "Params.tags" "intersect" .Params.tags -}}
 {{- $related = where $related "RelPermalink" "ne" .RelPermalink -}}
+{{- $related = where $related "Section" .Section -}}
 {{- $related = first 3 $related -}}
 {{- with $related }}
 <aside class="related-writing" aria-labelledby="related-title">

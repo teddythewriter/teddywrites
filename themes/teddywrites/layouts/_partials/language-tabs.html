@@ -1,0 +1,4 @@
+<nav class="language-tabs" aria-label="Story language">
+  <a href="{{ "posts/" | relLangURL }}" lang="en"{{ if ne .Section "sinhala" }} aria-current="page"{{ end }}>English</a>
+  <a href="{{ "sinhala/" | relLangURL }}" lang="si"{{ if eq .Section "sinhala" }} aria-current="page"{{ end }}>සිංහල</a>
+</nav>
