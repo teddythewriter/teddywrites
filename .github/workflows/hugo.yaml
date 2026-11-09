@@ -34,6 +34,10 @@ jobs:
       - name: Build
         run: hugo --minify
 
+      - name: Publish 404 page at site root
+        # GitHub Pages only serves 404.html from the root; Hugo builds it under /en/.
+        run: cp public/en/404.html public/404.html
+
       - name: Check internal links and required metadata
         run: python scripts/check_site.py public
 

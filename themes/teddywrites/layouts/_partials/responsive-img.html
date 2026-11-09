@@ -1,0 +1,19 @@
+{{- /* Resized WebP srcset for a static image path; falls back to the original file. */ -}}
+{{- $src := .src -}}
+{{- $alt := .alt | default "" -}}
+{{- $loading := .loading | default "lazy" -}}
+{{- $priority := .priority -}}
+{{- with resources.Get $src -}}
+  {{- $set := slice -}}
+  {{- $fallback := . -}}
+  {{- range $.widths -}}
+    {{- if le . $fallback.Width -}}
+      {{- $img := $fallback.Resize (printf "%dx webp q78" .) -}}
+      {{- $set = $set | append (printf "%s %dw" $img.RelPermalink $img.Width) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $default := $fallback.Resize (printf "%dx webp q78" (index $.widths (sub (len $.widths) 1) | math.Min $fallback.Width | int)) -}}
+  <img src="{{ $default.RelPermalink }}" srcset="{{ delimit $set ", " }}" sizes="{{ $.sizes }}" alt="{{ $alt }}" width="{{ $default.Width }}" height="{{ $default.Height }}" loading="{{ $loading }}" decoding="async"{{ with $priority }} fetchpriority="{{ . }}"{{ end }}>
+{{- else -}}
+  <img src="{{ $src | absURL }}" alt="{{ $alt }}" width="{{ $.width }}" height="{{ $.height }}" loading="{{ $loading }}"{{ with $priority }} fetchpriority="{{ . }}"{{ end }}>
+{{- end -}}

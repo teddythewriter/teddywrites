@@ -69,6 +69,8 @@ def main() -> int:
     manifest = site_root / "site.webmanifest"
     if not manifest.is_file():
         issues.append("site.webmanifest: file is missing")
+    if not (site_root / "404.html").is_file():
+        issues.append("404.html: file is missing at site root (GitHub Pages will show its default page)")
 
     for page in site_root.rglob("*.html"):
         text = page.read_text(encoding="utf-8")

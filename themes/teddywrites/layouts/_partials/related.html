@@ -1,5 +1,4 @@
-{{- $related := where .Site.RegularPages "Params.tags" "intersect" .Params.tags -}}
-{{- $related = where $related "RelPermalink" "ne" .RelPermalink -}}
+{{- $related := .Site.RegularPages.Related . -}}
 {{- $related = where $related "Section" .Section -}}
 {{- $related = first 3 $related -}}
 {{- with $related }}
