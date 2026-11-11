@@ -5,6 +5,7 @@ draft: false
 description: "One drunken night of gratitude and confession moves toward a darker final decision."
 contentWarnings: ["alcohol", "implied suicide"]
 tags: ["short fiction", "mental health"]
+form: "story"
 images:
   - images/stories/liquid-courage.png
 ---

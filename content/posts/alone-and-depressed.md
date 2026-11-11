@@ -5,6 +5,7 @@ draft: false
 description: "A raw fragment about isolation, invisible pain, and struggling to survive yourself."
 contentWarnings: ["depression"]
 tags: ["mental health", "reflections"]
+form: "letter"
 ---
 
 I just want to talk to someone,  

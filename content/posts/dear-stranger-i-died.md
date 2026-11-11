@@ -4,6 +4,7 @@ date: 2026-09-06T00:00:00+05:30
 draft: false
 description: "A letter about heartbreak, losing a version of yourself, and finding clarity in the aftermath."
 tags: ["reflections", "relationships"]
+form: "letter"
 ---
 
 Dear Stranger,

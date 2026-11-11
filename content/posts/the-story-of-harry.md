@@ -5,6 +5,7 @@ draft: false
 description: "A man in grief turns a gun on himself while his friend tries to pull him back."
 contentWarnings: ["suicide", "gun violence", "grief"]
 tags: ["short fiction", "grief", "mental health"]
+form: "story"
 images:
   - images/stories/the-story-of-harry.webp
 ---

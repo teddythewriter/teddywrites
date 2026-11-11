@@ -10,11 +10,13 @@
 <link rel="manifest" href="{{ "site.webmanifest" | relURL }}">
 <link rel="icon" type="image/png" sizes="96x96" href="{{ "favicon-96x96.png" | relURL }}">
 <link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | relURL }}">
-<meta name="theme-color" content="#f4efe3" media="(prefers-color-scheme: light)">
-<meta name="theme-color" content="#171a19" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#232A2E">
+{{- /* Dark is the default; apply a remembered choice before first paint to avoid a flash. */}}
+<script>(function(){try{var t=localStorage.getItem('teddywrites-theme');if(t==='light'||t==='dark')document.documentElement.dataset.theme=t}catch(e){}})();</script>
 <title>{{ if .IsHome }}{{ .Site.Title }} — {{ .Site.Params.description }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
 {{ template "_internal/opengraph.html" . }}
 {{ template "_internal/twitter_cards.html" . }}
 {{ partial "schema.html" . }}
 {{ range .AlternativeOutputFormats }}<link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink }}" title="{{ $.Title }}">{{ end }}
+<link rel="preload" href="{{ "fonts/literata-latin.woff2" | relURL }}" as="font" type="font/woff2" crossorigin>
 {{ $style := resources.Get "css/main.css" | minify | fingerprint }}<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}">

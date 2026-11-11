@@ -5,6 +5,7 @@ draft: false
 description: "A wounded man meets the end of a long game of violence with one final, bitter laugh."
 contentWarnings: ["stabbing", "death"]
 tags: ["short fiction"]
+form: "fragment"
 images:
   - images/stories/dwyane-on-the-dancefloor.webp
 ---

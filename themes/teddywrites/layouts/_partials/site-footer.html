@@ -1,7 +1,11 @@
 <footer class="site-footer">
   <div class="footer-inner">
     <p>&copy; {{ now.Format "2006" }} {{ .Site.Title }}</p>
-    <p class="footer-note">Stories, fragments, and thoughts.</p>
-    {{ with .OutputFormats.Get "RSS" }}<a href="{{ .RelPermalink }}">RSS</a>{{ end }}
+    <nav aria-label="Footer">
+      <a href="{{ "about/" | relLangURL }}">About</a>
+      <a href="{{ "posts/" | relLangURL }}">Archive</a>
+      <a href="{{ "tags/" | relLangURL }}">Themes</a>
+      {{ with site.Home.OutputFormats.Get "RSS" }}<a href="{{ .RelPermalink }}">RSS</a>{{ end }}
+    </nav>
   </div>
 </footer>

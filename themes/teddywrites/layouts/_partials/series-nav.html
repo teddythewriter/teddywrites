@@ -1,11 +1,32 @@
 {{ with .Params.seriesPage }}
-  {{ $series := $.Site.GetPage . }}
-  {{ $chapters := sort (where $.Site.RegularPages "Params.seriesPage" .) "Params.part" }}
-  <nav class="story-pagination" aria-label="Chapter navigation">
-    {{ range $index, $chapter := $chapters }}{{ if eq $chapter.RelPermalink $.RelPermalink }}
-      {{ if gt $index 0 }}{{ with index $chapters (sub $index 1) }}<a href="{{ .RelPermalink }}" rel="prev"><small>Previous chapter</small><span>← Part {{ .Params.part }}</span></a>{{ end }}{{ end }}
-      {{ with $series }}<a href="{{ .RelPermalink }}"><small>{{ .Title }}</small><span>All chapters</span></a>{{ end }}
-      {{ if lt (add $index 1) (len $chapters) }}{{ with index $chapters (add $index 1) }}<a class="next" href="{{ .RelPermalink }}" rel="next"><small>Next chapter</small><span>Part {{ .Params.part }} →</span></a>{{ end }}{{ end }}
-    {{ end }}{{ end }}
+  {{ $series := site.GetPage . }}
+  {{ $chapters := sort (where site.RegularPages "Params.seriesPage" .) "Params.part" }}
+  {{ $prev := false }}{{ $next := false }}
+  {{ range $index, $chapter := $chapters }}{{ if eq $chapter.RelPermalink $.RelPermalink }}
+    {{ if gt $index 0 }}{{ $prev = index $chapters (sub $index 1) }}{{ end }}
+    {{ if lt (add $index 1) (len $chapters) }}{{ $next = index $chapters (add $index 1) }}{{ end }}
+  {{ end }}{{ end }}
+  {{ $ongoing := and $series (eq $series.Params.seriesStatus "Ongoing") }}
+  <p class="ornament" aria-hidden="true">···</p>
+  <section class="card next-card" aria-labelledby="next-title">
+    <p class="tone-label">Next chapter</p>
+    {{ if $next }}
+    <h2 id="next-title">Part {{ $next.Params.part }}</h2>
+    {{ with $next.Description }}<p>{{ . }}</p>{{ end }}
+    {{ else if $ongoing }}
+    <h2 id="next-title">Not out yet</h2>
+    <p>This story is ongoing. The next part will appear here when it is published.</p>
+    {{ else }}
+    <h2 id="next-title">The end</h2>
+    <p>This was the last part of the story.</p>
+    {{ end }}
+    <div class="button-row">
+      {{ with $next }}<a class="btn btn-primary" href="{{ .RelPermalink }}" rel="next">Read Part {{ .Params.part }}</a>{{ end }}
+      {{ if or $next $ongoing }}{{ with site.Home.OutputFormats.Get "RSS" }}<a class="btn" href="{{ .RelPermalink }}">Follow by RSS</a>{{ end }}{{ end }}
+    </div>
+  </section>
+  <nav class="chapter-links" aria-label="Chapter navigation">
+    {{ with $prev }}<a class="back-link" href="{{ .RelPermalink }}" rel="prev">← Part {{ .Params.part }}</a>{{ end }}
+    {{ with $series }}<a class="back-link" href="{{ .RelPermalink }}">All chapters</a>{{ end }}
   </nav>
 {{ end }}

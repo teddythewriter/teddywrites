@@ -1,0 +1,9 @@
+{{ define "main" }}
+{{- $pages := where (where .Site.RegularPages "Section" "posts") "Params.form" .Params.form }}
+<main id="main-content" class="site-main page-shell archive-page">
+  <div class="list-column">
+  <header class="page-header"><p class="marked-label">{{ len $pages }} {{ if eq (len $pages) 1 }}piece{{ else }}pieces{{ end }}</p><h1>{{ .Title }}</h1>{{ with .Content }}<div class="page-deck">{{ . }}</div>{{ end }}</header>
+  {{ partial "entry-list.html" (dict "pages" $pages) }}
+  </div>
+</main>
+{{ end }}

@@ -3,6 +3,7 @@ title: "All the Time Between Us"
 layout: "story-series"
 description: "A missed bus brings two people together. An ordinary evening leaves an unexpected question."
 seriesStatus: "Ongoing"
+teaser: "“You’ve just missed it.”\nI looked up from my phone. A red bus was disappearing around the corner."
 images: ["images/stories/all-the-time-between-us.png"]
 ---
 An ordinary bus stop. A conversation that comes easily. Someone who remembers more than she lets on.

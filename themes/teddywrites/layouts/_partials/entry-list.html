@@ -1,0 +1,4 @@
+{{- /* Year-grouped list of entries. Expects a dict with "pages" and an optional "lang". */ -}}
+{{ range .pages.GroupByDate "2006" }}<section class="year-group"><h2>{{ .Key }}</h2><ol class="archive-list"{{ with $.lang }} lang="{{ . }}"{{ end }}>
+  {{ range .Pages.ByDate.Reverse }}<li class="archive-item" data-search="{{ .Title }}{{ with .Params.tags }} {{ delimit . " " }}{{ end }}"><a href="{{ .RelPermalink }}"><span>{{ .Title }}</span><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2" }}</time></a>{{ with .Description }}<p>{{ . }}</p>{{ end }}</li>{{ end }}
+</ol></section>{{ end }}

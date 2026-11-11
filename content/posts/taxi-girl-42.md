@@ -4,6 +4,7 @@ date: 2026-09-30T00:00:00+05:30
 draft: false
 description: "A café meeting, a borrowed moment, and the quiet hope of an unattainable love."
 tags: ["short fiction", "relationships"]
+form: "story"
 ---
 
 It was almost time for the sun to rise. As I got up I remembered that I had promised her that I would come to meet her. I checked my messages and saw her message,

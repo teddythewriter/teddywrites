@@ -1,74 +1,96 @@
 {{ define "main" }}
   {{- $posts := where .Site.RegularPages "Section" "posts" -}}
   {{- $featured := first 3 (where $posts "Params.featured" true) -}}
-  <main id="main-content" class="site-main section-inner home-shell">
-    <section class="home-hero" aria-labelledby="home-title">
-      <p class="home-kicker">Stories, fragments, and thoughts</p>
-      <h1 id="home-title">{{ .Site.Title }}</h1>
-      <p class="home-intro">Short fiction and personal reflections, written across the years and kept here before they disappear.</p>
-      {{- with .Site.Params.homeSubtitle }}<p class="home-quote">“{{ . }}”</p>{{ end }}
-      <div class="home-actions">
-        <a class="primary-link" href="{{ "posts/" | relLangURL }}">Start reading</a>
-        <a class="secondary-link" href="{{ "about/" | relLangURL }}">About Teddy</a>
+  {{- $fragments := first 3 (where $posts "Params.form" "fragment").ByDate.Reverse -}}
+  {{- $tones := slice "tone-yellow" "tone-blue" "tone-purple" -}}
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <h1 id="hero-title" class="sr-only">{{ .Site.Title }}</h1>
+        <div class="entry-tiles">
+          {{- range $index, $path := slice "/stories" "/fragments" "/letters" }}{{ with site.GetPage $path }}
+          <a class="entry-tile" href="{{ .RelPermalink }}">
+            <span class="tone-label {{ index $tones $index }}">{{ printf "%02d" (add $index 1) }}</span>
+            <strong>{{ .Title }}</strong>
+            {{ with .Params.tile }}<span>{{ . }}</span>{{ end }}
+          </a>
+          {{- end }}{{ end }}
+        </div>
       </div>
+      <div class="palette-strip" aria-hidden="true"><span style="background: var(--red)"></span><span style="background: var(--orange)"></span><span style="background: var(--yellow)"></span><span style="background: var(--green)"></span><span style="background: var(--aqua)"></span><span style="background: var(--blue)"></span><span style="background: var(--purple)"></span></div>
     </section>
 
-    {{- with $featured }}
-    <section class="home-section" aria-labelledby="featured-title">
-      <div class="section-heading">
-        <p class="section-label">A place to begin</p>
-        <h2 id="featured-title">Featured writing</h2>
+    <div class="site-main">
+    {{- range first 1 (where (where .Site.RegularPages "Section" "series") "Params.seriesStatus" "Ongoing") }}
+    {{- $serial := . }}
+    {{- $chapters := sort (where site.RegularPages "Params.seriesPage" .Path) "Params.part" }}
+    {{- with $chapters }}
+    {{- $first := index . 0 }}{{ $latest := index . (sub (len .) 1) }}
+    <section class="card serial-card" aria-labelledby="serial-title">
+      <p class="marked-label">Now serialising · Part {{ $latest.Params.part }} out {{ $latest.Date.Format "Jan 2, 2006" }}</p>
+      {{ with $serial.Params.teaser }}<blockquote>{{ range $index, $line := split . "\n" }}{{ if $index }}<br>{{ end }}{{ $line }}{{ end }}</blockquote>{{ end }}
+      <div>
+        <h2 id="serial-title">{{ $serial.Title }}</h2>
+        {{ with $serial.Description }}<p>{{ . }}</p>{{ end }}
       </div>
-      <div class="featured-grid">
+      <div class="button-row">
+        <a class="btn btn-primary" href="{{ $first.RelPermalink }}">Start at Part {{ $first.Params.part }}</a>
+        {{ if gt (len .) 1 }}<a class="btn" href="{{ $latest.RelPermalink }}">Continue with Part {{ $latest.Params.part }}</a>{{ end }}
+      </div>
+    </section>
+    {{- end }}
+    {{- end }}
+
+    {{- with $featured }}
+    <section class="home-section" aria-labelledby="start-title">
+      <div class="section-heading">
+        <h2 id="start-title">Start here</h2>
+        <a class="more-link" href="{{ "stories/" | relLangURL }}">All stories</a>
+      </div>
+      <div class="card-grid">
+        {{- range $index, $story := . }}
+        <a class="card" href="{{ .RelPermalink }}">
+          <span class="tone-label {{ index $tones (mod $index 3) }}">{{ with .Params.mood }}{{ . }} · {{ end }}{{ .Date.Format "2006" }}</span>
+          <span class="card-title">{{ .Title }}</span>
+          <span class="card-text">{{ .Description | default (.Summary | plainify | truncate 145) }}</span>
+        </a>
+        {{- end }}
+      </div>
+    </section>
+    {{- end }}
+
+    {{- with $fragments }}
+    <section class="home-section" aria-labelledby="notebook-title">
+      <div class="section-heading">
+        <h2 id="notebook-title">From the notebook</h2>
+        <a class="more-link" href="{{ "fragments/" | relLangURL }}">All fragments</a>
+      </div>
+      <div class="notebook">
         {{- range . }}
-        <article class="story-card">
-          <a class="story-card-link" href="{{ .RelPermalink }}" aria-label="Read {{ .Title }}">
-            {{- with .Params.images }}
-              {{- $image := index . 0 -}}
-              {{ partial "responsive-img.html" (dict "src" $image "widths" (slice 480 720 1080) "sizes" "(max-width: 760px) 92vw, 360px" "width" 720 "height" 480) }}
-            {{- end }}
-            <div class="story-card-body">
-              <p class="story-card-meta">{{ .Date.Format "2006" }} · {{ .ReadingTime }} min read</p>
-              <h3>{{ .Title }}</h3>
-              <p>{{ .Description | default (.Summary | plainify | truncate 145) }}</p>
-            </div>
-          </a>
+        <article>
+          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+          <div>
+            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+            <p>{{ .Plain | htmlUnescape | truncate 200 }}</p>
+          </div>
         </article>
         {{- end }}
       </div>
     </section>
     {{- end }}
 
-    <section class="home-section latest-section" aria-labelledby="latest-title">
-      <div class="section-heading section-heading-row">
-        <div>
-          <p class="section-label">From the notebook</p>
-          <h2 id="latest-title">Latest entries</h2>
-        </div>
-        <a href="{{ "posts/" | relLangURL }}">View the full archive →</a>
-      </div>
-      <ol class="latest-list">
-        {{- range first 6 $posts.ByDate.Reverse }}
-        <li>
-          <a href="{{ .RelPermalink }}">
-            <span>{{ .Title }}</span>
-            <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
-          </a>
-        </li>
-        {{- end }}
-      </ol>
-    </section>
-
-    <section class="home-section explore-section" aria-labelledby="explore-title">
+    <section class="home-section" aria-labelledby="themes-title">
       <div class="section-heading">
-        <p class="section-label">Follow a thread</p>
-        <h2 id="explore-title">Explore by theme</h2>
+        <h2 id="themes-title">Follow a thread</h2>
+        <a class="more-link" href="{{ "tags/" | relLangURL }}">All themes</a>
       </div>
-      <div class="theme-links">
-        {{- range first 8 .Site.Taxonomies.tags.ByCount }}
-        <a href="{{ .Page.RelPermalink }}"><span>{{ .Page.Title }}</span><small>{{ .Count }}</small></a>
-        {{- end }}
+      <div class="pill-row">
+        {{- /* "short fiction" and "reflections" are covered by the form pages above. */}}
+        {{- range .Site.Taxonomies.tags.ByCount }}{{ if not (in (slice "short fiction" "reflections") (lower .Page.Title)) }}
+        <a class="pill" href="{{ .Page.RelPermalink }}">{{ .Page.Title | lower }}</a>
+        {{- end }}{{ end }}
       </div>
     </section>
+    </div>
   </main>
 {{ end }}

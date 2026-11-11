@@ -5,6 +5,7 @@ draft: false
 description: "A scientist confronts what his artificial children may become—and who intends to own them."
 contentWarnings: ["violence"]
 tags: ["short fiction", "speculative fiction"]
+form: "story"
 images:
   - images/stories/creator-of-death.webp
 ---

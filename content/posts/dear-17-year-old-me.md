@@ -5,6 +5,7 @@ draft: false
 description: "A letter across time about innocence, depression, and the person survival created."
 contentWarnings: ["depression"]
 tags: ["reflections", "mental health"]
+form: "letter"
 ---
 
 Dear 17 year old me,

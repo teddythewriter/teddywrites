@@ -1,12 +1,12 @@
 {{ define "main" }}
-<main id="main-content" class="page-shell story-page">
-  <article>
-  <header class="story-header"><a class="back-link" href="{{ "series/" | relLangURL }}">← Stories in Parts</a><p class="eyebrow">{{ .Params.seriesStatus }}</p><h1>{{ .Title }}</h1><div class="story-deck">{{ .Content }}</div></header>
+<main id="main-content" class="site-main page-shell story-page">
+  <article class="reading-column">
+  <header class="page-header"><a class="back-link" href="{{ "series/" | relLangURL }}">← Stories in Parts</a><p class="marked-label">Serial{{ with .Params.seriesStatus }} · {{ . }}{{ end }}</p><h1>{{ .Title }}</h1>{{ with .Content }}<div class="page-deck">{{ . }}</div>{{ end }}</header>
   {{ partial "story-cover.html" . }}
   {{ $chapters := sort (where .Site.RegularPages "Params.seriesPage" .Path) "Params.part" }}
-  <section class="prose" aria-labelledby="chapters-heading"><h2 id="chapters-heading">Chapters</h2><ol>
-  {{ range $chapters }}<li><a href="{{ .RelPermalink }}">Part {{ .Params.part }}</a>{{ with .Description }} — {{ . }}{{ end }}</li>{{ end }}
-  </ol>{{ if eq .Params.seriesStatus "Ongoing" }}<p>This story is ongoing. More chapters will appear here as they are published.</p>{{ end }}</section>
+  <section aria-labelledby="chapters-heading"><h2 id="chapters-heading" class="sr-only">Chapters</h2><ol class="archive-list">
+  {{ range $chapters }}<li class="archive-item"><a href="{{ .RelPermalink }}"><span>Part {{ .Params.part }}</span><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time></a>{{ with .Description }}<p>{{ . }}</p>{{ end }}</li>{{ end }}
+  </ol>{{ if eq .Params.seriesStatus "Ongoing" }}<p class="label" style="margin-top: 24px">This story is ongoing. More chapters will appear here as they are published.</p>{{ end }}</section>
   </article>
 </main>
 {{ end }}

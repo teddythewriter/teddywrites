@@ -4,6 +4,7 @@ date: 2018-11-01T16:40:18+00:00
 draft: false
 description: "An online connection with a guarded stranger becomes a puzzle neither distance nor darkness can simplify."
 tags: ["relationships", "short fiction"]
+form: "fragment"
 images:
   - images/stories/the-girl-from-the-web.png
 ---

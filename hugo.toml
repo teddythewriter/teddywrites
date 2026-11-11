@@ -57,24 +57,34 @@ enableEmoji = true
 [menu]
 
   [[menu.main]]
-    name = "Series"
-    url = "series/"
-    weight = 12
-
-  [[menu.main]]
-    name = "Posts"
-    url = "posts/"
+    identifier = "stories"
+    name = "Stories"
+    url = "stories/"
     weight = 10
 
   [[menu.main]]
+    identifier = "fragments"
+    name = "Fragments"
+    url = "fragments/"
+    weight = 11
+
+  [[menu.main]]
+    identifier = "letters"
+    name = "Letters"
+    url = "letters/"
+    weight = 12
+
+  [[menu.main]]
+    identifier = "serial"
+    name = "Serial"
+    url = "series/"
+    weight = 13
+
+  [[menu.main]]
+    identifier = "about"
     name = "About"
     url = "about/"
     weight = 20
-
-  [[menu.main]]
-    name = "Explore"
-    url = "tags/"
-    weight = 15
 
 # Expose static images to Hugo Pipes so story artwork can be resized to WebP.
 # Declaring any mount replaces the defaults, so the standard ones are restated.

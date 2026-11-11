@@ -4,7 +4,9 @@ date: 2022-12-24T00:00:00+00:00
 draft: false
 description: "An unemployed pianist finds companionship—and something stranger—in the music next door."
 featured: true
+mood: "Strange"
 tags: ["short fiction", "speculative fiction"]
+form: "story"
 images:
   - images/stories/the-doppelganger.webp
 ---

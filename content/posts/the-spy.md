@@ -5,6 +5,7 @@ draft: false
 description: "A frightened newcomer receives a dangerous assignment from a boss who trusts no one."
 contentWarnings: ["threats of violence"]
 tags: ["short fiction"]
+form: "story"
 images:
   - images/stories/the-spy.webp
 ---

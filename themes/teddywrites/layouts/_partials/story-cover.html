@@ -4,6 +4,6 @@
 {{- end -}}
 {{- with $src -}}
 <figure class="story-cover">
-  {{ partial "responsive-img.html" (dict "src" . "alt" (printf "Featured artwork for %s" $.Title) "widths" (slice 640 1024 1536) "sizes" "(max-width: 760px) 92vw, 690px" "loading" "eager" "priority" "high" "width" 1536 "height" 1024) }}
+  {{ partial "responsive-img.html" (dict "src" . "alt" (printf "Featured artwork for %s" $.Title) "widths" (slice 640 1024 1536) "sizes" "(max-width: 760px) 92vw, 640px" "loading" "eager" "priority" "high" "width" 1536 "height" 1024) }}
 </figure>
 {{- end -}}

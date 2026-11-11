@@ -4,6 +4,7 @@ date: 2025-05-08T00:00:00+00:00
 draft: false
 description: "A return to broken promises, lost love, and notes once written for a shared future."
 tags: ["relationships", "reflections"]
+form: "letter"
 ---
 
 I've always wondered how fragile promises can be. How at one time we are so fixated on trying to make everything and then suddenly those promises mean nothing at all. One time someone could mean the world to us and then they mean nothing at all.

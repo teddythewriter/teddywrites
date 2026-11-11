@@ -4,6 +4,7 @@ date: 2023-01-24T00:00:00+00:00
 draft: false
 description: "A short challenge to the compromises that quietly turn ambition into routine."
 tags: ["reflections"]
+form: "fragment"
 ---
 
 Do you remember the first time you let someone pay you to suppress your dreams?

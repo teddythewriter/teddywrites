@@ -5,6 +5,7 @@ draft: false
 description: "A descent through overthinking, exhaustion, and the wish for a kind of quiet that does not hurt."
 contentWarnings: ["depression", "suicidal thoughts"]
 tags: ["mental health", "writing"]
+form: "letter"
 ---
 
 I Hate Thinking

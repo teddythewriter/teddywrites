@@ -5,6 +5,7 @@ draft: false
 description: "An anxious spiral about appearing functional while doubt waits for the next quiet moment."
 contentWarnings: ["anxiety", "depression"]
 tags: ["reflections", "mental health"]
+form: "letter"
 ---
 
 Have you ever been hit by a sudden dose of reality?

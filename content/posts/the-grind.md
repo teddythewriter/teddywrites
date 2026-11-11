@@ -5,6 +5,7 @@ draft: false
 description: "A direct argument for choosing the difficult work of living when giving up feels easier."
 contentWarnings: ["suicide"]
 tags: ["mental health", "reflections"]
+form: "fragment"
 ---
 
 Dying is easy.

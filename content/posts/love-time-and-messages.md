@@ -4,7 +4,9 @@ date: 2024-12-25T17:33:40+00:00
 draft: false
 description: "A messaging glitch connects a man with someone who knows far too much about his future."
 featured: true
+mood: "Playful"
 tags: ["short fiction", "speculative fiction", "relationships"]
+form: "story"
 images:
   - images/stories/love-time-and-messages.webp
 ---

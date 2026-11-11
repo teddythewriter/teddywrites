@@ -4,8 +4,10 @@ date: 2021-09-09T18:29:15+00:00
 draft: false
 description: "A quiet conversation at sunset becomes a reckoning with love, memory, and the self."
 featured: true
+mood: "Quiet"
 contentWarnings: ["mental illness", "self-harm", "medication"]
 tags: ["short fiction", "mental health", "relationships"]
+form: "story"
 images:
   - images/stories/into-the-sunset.webp
 ---

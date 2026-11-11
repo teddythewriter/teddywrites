@@ -4,6 +4,7 @@ date: 2026-10-07T00:00:00+05:30
 draft: false
 description: "Someone remembers a small printing shop, a blue folder, and a morning they saw differently."
 tags: ["short fiction", "relationships"]
+form: "story"
 seriesPage: "/series/all-the-time-between-us"
 part: 2
 images: ["images/stories/all-the-time-between-us.png"]

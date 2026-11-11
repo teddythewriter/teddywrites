@@ -16,8 +16,11 @@
     try { sessionStorage.setItem(key, JSON.stringify({ playing: wanted, volume: audio.volume })); } catch (_) {}
   };
   const render = () => {
-    button.textContent = audio.paused ? 'Play rain' : 'Pause rain';
+    const label = audio.paused ? 'Play rain' : 'Pause rain';
+    button.setAttribute('aria-label', label);
+    button.title = label;
     button.setAttribute('aria-pressed', String(!audio.paused));
+    player.classList.toggle('is-playing', !audio.paused);
   };
   const play = async () => {
     try {

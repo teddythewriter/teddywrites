@@ -5,6 +5,7 @@ draft: false
 description: "A dying man and the woman beside him confront love, memory, and an ending neither can stop."
 contentWarnings: ["death", "blood"]
 tags: ["short fiction", "grief", "relationships"]
+form: "fragment"
 images:
   - images/stories/loss.png
 ---

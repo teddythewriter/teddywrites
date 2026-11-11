@@ -4,6 +4,7 @@ date: 2020-04-05T02:20:42+00:00
 draft: false
 description: "A reflection on loving someone enough to remain outside the life they chose."
 tags: ["relationships", "reflections"]
+form: "fragment"
 ---
 
 Someone asked me, what was the biggest sacrifice you've made for love. I had to think for awhile. There were many sacrifices i made in the name of love. Although I never managed to love down even one of those sacrifices, at the end of the day there was only one that stood out.

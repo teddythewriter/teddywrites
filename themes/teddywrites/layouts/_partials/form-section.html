@@ -1,0 +1,4 @@
+{{- /* Returns the section page (Stories, Fragments, Letters) that a post's form belongs to, or false. */ -}}
+{{- $section := false -}}
+{{- with .Params.form }}{{ with index (dict "story" "/stories" "fragment" "/fragments" "letter" "/letters") . }}{{ $section = site.GetPage . }}{{ end }}{{ end -}}
+{{- return $section -}}

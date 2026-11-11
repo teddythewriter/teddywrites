@@ -4,6 +4,7 @@ date: 2026-10-02T00:00:00+05:30
 draft: false
 description: "A missed bus, an unexpected conversation, and someone who seems to know more than she says."
 tags: ["short fiction", "relationships"]
+form: "story"
 seriesPage: "/series/all-the-time-between-us"
 part: 1
 images: ["images/stories/all-the-time-between-us.png"]

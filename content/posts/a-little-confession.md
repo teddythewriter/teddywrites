@@ -4,6 +4,7 @@ date: 2020-10-29T19:26:41+00:00
 draft: false
 description: "A private confession to someone whose unexpected arrival began to feel strangely familiar."
 tags: ["relationships", "reflections"]
+form: "letter"
 ---
 
 I'm writing this in case if things go south.  

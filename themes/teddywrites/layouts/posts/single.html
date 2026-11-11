@@ -1,19 +1,29 @@
 {{ define "main" }}
-<main id="main-content" class="page-shell story-page">
-  <article>
-    <header class="story-header">
-      <a class="back-link" href="{{ .CurrentSection.RelPermalink }}">← {{ if eq .Section "sinhala" }}සිංහල කතා{{ else }}Archive{{ end }}</a>
-      <p class="eyebrow">{{ with index .Params.tags 0 }}{{ . }}{{ else }}From the archive{{ end }}</p>
+{{- $series := false }}{{ with .Params.seriesPage }}{{ $series = site.GetPage . }}{{ end }}
+{{- $form := partial "form-section.html" . }}
+<main id="main-content" class="site-main page-shell story-page">
+  <article class="reading-column">
+    <header class="page-header">
+      {{- if $series }}
+      <a class="back-link" href="{{ $series.RelPermalink }}">← All chapters</a>
+      <p class="marked-label">Serial · Part {{ .Params.part }}{{ with $series.Params.seriesStatus }} · {{ . }}{{ end }}</p>
+      <h1>{{ $series.Title }}</h1>
+      {{- else if eq .Section "sinhala" }}
+      <a class="back-link" lang="si" href="{{ .CurrentSection.RelPermalink }}">← සිංහල කතා</a>
+      {{ with .Params.tags }}<p class="marked-label">{{ index . 0 }}</p>{{ end }}
       <h1{{ with .Params.storyLanguage }} lang="{{ . }}"{{ end }}>{{ .Title }}</h1>
-      {{ with .Params.seriesPage }}{{ with $.Site.GetPage . }}<p class="eyebrow"><a href="{{ .RelPermalink }}">{{ .Title }}</a> · Part {{ $.Params.part }}</p>{{ end }}{{ end }}
-      {{ with .Description }}<p class="story-deck">{{ . }}</p>{{ end }}
-      <div class="story-meta"><span>By <a href="{{ "about/" | relLangURL }}">{{ .Params.author | default .Site.Params.author.name }}</a></span><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time><span>{{ .ReadingTime }} min read</span></div>
+      {{- else }}
+      {{ with $form }}<a class="back-link" href="{{ .RelPermalink }}">← {{ .Title }}</a><p class="marked-label">{{ .Params.singular | default .Title }}</p>{{ else }}<a class="back-link" href="{{ .CurrentSection.RelPermalink }}">← Archive</a>{{ end }}
+      <h1>{{ .Title }}</h1>
+      {{- end }}
+      {{ with .Description }}<p class="page-deck"{{ with $.Params.storyLanguage }} lang="{{ . }}"{{ end }}>{{ . }}</p>{{ end }}
+      <p class="story-meta"><span>By <a href="{{ "about/" | relLangURL }}">{{ .Params.author | default .Site.Params.author.name }}</a></span><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time><span>About {{ .ReadingTime }} min</span></p>
       {{ with .Params.contentWarnings }}<aside class="content-note"><strong>Content note</strong><span>{{ delimit . ", " }}.</span></aside>{{ end }}
     </header>
     {{ partial "story-cover.html" . }}
     <div class="prose story-prose" lang="{{ .Params.storyLanguage | default "en" }}">{{ .Content }}</div>
     {{ partial "series-nav.html" . }}
-    {{ with .Params.tags }}<footer class="story-tags" aria-label="Themes">{{ range . }}<a href="{{ "tags/" | absLangURL }}{{ . | urlize }}">{{ . }}</a>{{ end }}</footer>{{ end }}
+    {{ with .Params.tags }}<footer class="pill-row story-tags" aria-label="Themes">{{ range . }}<a class="pill" href="{{ printf "tags/%s/" (. | urlize) | relLangURL }}">{{ . }}</a>{{ end }}</footer>{{ end }}
     {{ partial "related.html" . }}
   </article>
   {{ if not .Params.seriesPage }}<nav class="story-pagination" aria-label="Adjacent entries">

@@ -4,6 +4,7 @@ date: 2023-09-02T00:00:00+00:00
 draft: false
 description: "A tiny alternate history built around one rejection, one talent, and the path that might have changed."
 tags: ["short fiction", "speculative fiction"]
+form: "fragment"
 images:
   - images/stories/alternate-adolf.png
 ---

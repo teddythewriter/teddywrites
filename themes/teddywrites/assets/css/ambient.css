@@ -1,6 +1,9 @@
-.ambient-player:not([hidden]) { display: flex; align-items: center; gap: .7rem; position: fixed; right: 1rem; bottom: max(1rem, env(safe-area-inset-bottom)); z-index: 25; padding: .4rem .8rem; border: 1px solid var(--rule); border-radius: 999px; background: var(--paper-raised); color: var(--ink); box-shadow: var(--shadow); font-size: .78rem; }
-.ambient-toggle { min-height: 44px; border: 0; background: transparent; color: var(--sage-dark); cursor: pointer; padding: .4rem; }
-.ambient-player input { width: 75px; min-height: 44px; accent-color: var(--sage-dark); }
-.ambient-credit { padding: .5rem 0; color: var(--muted); text-decoration: underline; }
-body:has(.ambient-player:not([hidden])) { padding-bottom: 85px; }
+.ambient-player:not([hidden]) { display: flex; flex-direction: row-reverse; align-items: center; gap: 10px; position: fixed; right: 16px; bottom: max(16px, env(safe-area-inset-bottom)); z-index: 25; font-family: var(--mono); font-size: 12px; }
+.ambient-toggle { color: var(--meta); background: var(--band); }
+.ambient-player.is-playing .ambient-toggle { border-color: var(--accent); color: var(--accent); }
+/* The volume and credit stay tucked away until the rain is playing or the reader reaches for the button. */
+.ambient-controls { display: none; align-items: center; gap: 10px; min-height: 44px; padding: 0 12px; border: 1px solid var(--rule-strong); border-radius: 6px; color: var(--meta); background: var(--band); }
+.ambient-player.is-playing .ambient-controls, .ambient-player:hover .ambient-controls, .ambient-player:focus-within .ambient-controls { display: flex; }
+.ambient-controls input { width: 75px; min-height: 44px; accent-color: var(--accent); }
+.ambient-credit { text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 4px; }
 @media print { .ambient-player { display: none !important; } }

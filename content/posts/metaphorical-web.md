@@ -4,6 +4,7 @@ date: 2022-12-15T00:00:00+00:00
 draft: false
 description: "A self-made web of validation and constraint becomes both prison and comfort."
 tags: ["mental health", "reflections"]
+form: "fragment"
 ---
 
 I'm stuck.

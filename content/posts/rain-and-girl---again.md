@@ -4,6 +4,7 @@ date: 2022-10-20T00:00:00+00:00
 draft: false
 description: "An unexpected shower brings back the memory of a girl and an unfinished connection."
 tags: ["short fiction", "relationships"]
+form: "story"
 images:
   - images/stories/rain-and-girl.webp
 ---
