@@ -1,6 +1,6 @@
 ---
 title: "All the Time Between Us — Part 3"
-date: 2026-11-18T00:00:00+05:30
+date: 2026-11-16T00:00:00+05:30
 draft: false
 description: "Someone wanted to show a shortcut and a bookstore."
 tags: ["short fiction", "relationships"]
