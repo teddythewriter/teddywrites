@@ -109,6 +109,8 @@ def main() -> int:
         return fail(f"read href {read['attrs'].get('href')!r} != {newest['url']!r}")
     if not norm(read["text"]).startswith("Read "):
         return fail(f"read button text {read['text']!r}")
+    if "aria-live" in parser.ol["line"]["attrs"]:
+        return fail("aria-live must be set by JS after the first pick, not server-rendered")
     if "hidden" not in parser.ol["another"]["attrs"]:
         return fail("'Show me another' must be server-rendered hidden")
 

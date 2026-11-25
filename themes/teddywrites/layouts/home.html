@@ -23,7 +23,7 @@
       <div class="stage">
         <div class="hero-inner stage-inner">
           <p class="stage-label" data-ol="label">{{ with $e.form }}{{ . }} · {{ end }}{{ $e.date }}</p>
-          <blockquote class="stage-line" data-ol="line" lang="{{ $e.lang }}" aria-live="polite">{{ $e.line }}</blockquote>
+          <blockquote class="stage-line" data-ol="line" lang="{{ $e.lang }}">{{ $e.line }}</blockquote>
           <p class="stage-from">from <a data-ol="title" href="{{ $e.url }}"{{ if eq $e.lang "si" }} lang="si"{{ end }}><strong>{{ $e.title }}</strong></a></p>
           <div class="stage-actions">
             <a class="btn btn-primary" data-ol="read" href="{{ $e.url }}">{{ with $e.form }}Read the {{ lower . }}{{ else }}Read it{{ end }}</a>

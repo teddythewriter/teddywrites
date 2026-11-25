@@ -23,7 +23,7 @@ if (typeof module !== "undefined") module.exports = { pickNext };
 
   const el = {};
   document.querySelectorAll("[data-ol]").forEach(function (node) { el[node.dataset.ol] = node; });
-  if (!el.line || !el.read) return;
+  if (!el.line || !el.read || !el.label || !el.title) return;
 
   const reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   let current = entries.findIndex(function (entry) { return entry.url === el.read.getAttribute("href"); });
@@ -39,22 +39,29 @@ if (typeof module !== "undefined") module.exports = { pickNext };
     el.read.textContent = entry.form ? "Read the " + entry.form.toLowerCase() : "Read it";
   }
 
+  let fading = false;
+
   function show(index, animate) {
     if (index === current) return;
     current = index;
     if (!animate || reduceMotion) { render(entries[index]); return; }
+    fading = true;
     el.line.classList.add("is-fading");
     window.setTimeout(function () {
       render(entries[index]);
       el.line.classList.remove("is-fading");
+      fading = false;
     }, 180);
   }
 
   show(pickNext(entries.length, -1, Math.random), false);
+  // Announce swaps only after the silent first pick, so screen readers don't read the line on load.
+  el.line.setAttribute("aria-live", "polite");
 
   if (entries.length >= 2 && el.another) {
     el.another.hidden = false;
     el.another.addEventListener("click", function () {
+      if (fading) return;
       show(pickNext(entries.length, current, Math.random), true);
     });
   }
