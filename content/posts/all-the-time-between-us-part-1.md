@@ -8,6 +8,7 @@ form: "story"
 seriesPage: "/series/all-the-time-between-us"
 part: 1
 images: ["images/stories/all-the-time-between-us.png"]
+line: "“You’ve just missed it.” I looked up from my phone. A red bus was disappearing around the corner."
 ---
 
 “You’ve just missed it.”

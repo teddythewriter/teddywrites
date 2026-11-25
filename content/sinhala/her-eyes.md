@@ -6,6 +6,7 @@ type: posts
 storyLanguage: si
 description: "ආත්මයම විනිවිද දකින බැල්මක් ගැන කෙටි දෙබසක්."
 tags: ["short fiction", "relationships"]
+line: "ඒ බැල්ම හරියට මගේ සම්පූර්ණ ආත්මයම විනිවිද දකිනවා වගේ හැඟීමක් මට එන්නේ."
 ---
 
 ඒ පාර මොකෝ?

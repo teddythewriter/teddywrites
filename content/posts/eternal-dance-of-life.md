@@ -5,6 +5,7 @@ draft: false
 description: "A return to familiar love, familiar fear, and the cycle of breaking all over again."
 tags: ["relationships", "mental health", "reflections"]
 form: "letter"
+line: "You're like the moon, Calm, alluring, untouchable. And I'll fall for you all over again, knowing exactly how it ends."
 ---
 
 Hi.

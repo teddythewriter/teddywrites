@@ -8,6 +8,7 @@ form: "story"
 seriesPage: "/series/all-the-time-between-us"
 part: 3
 images: ["images/stories/all-the-time-between-us.png"]
+line: "The word \"our\" pleased me enough that I missed the rest."
 ---
 
 “On Friday I found Imaya halfway up a ladder.

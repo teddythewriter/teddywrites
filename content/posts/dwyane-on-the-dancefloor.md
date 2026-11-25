@@ -8,6 +8,7 @@ tags: ["short fiction"]
 form: "fragment"
 images:
   - images/stories/dwyane-on-the-dancefloor.webp
+line: "Dwyane is still holding on to his laugh on the dancefloor."
 ---
 
 Dwyane is still holding on to his laugh on the dancefloor. Although he's feeling a bit woozy, He's trying to process the event that just happened.

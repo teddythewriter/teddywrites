@@ -7,6 +7,7 @@ tags: ["short fiction", "speculative fiction"]
 form: "fragment"
 images:
   - images/stories/alternate-adolf.png
+line: "I'm sorry but We are looking for someone with other talents than yours. I strongly believe your calling is Architecture."
 ---
 
 This, This doesn't have enough heads you know. But. you've managed to capture the essence of architecture really well. Don't you think that's your calling? One of the instructors said to the teen who was standing in front of him expectantly.

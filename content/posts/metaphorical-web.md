@@ -5,6 +5,7 @@ draft: false
 description: "A self-made web of validation and constraint becomes both prison and comfort."
 tags: ["mental health", "reflections"]
 form: "fragment"
+line: "The web looks nice when an occasional compliment hangs off of it like a dew drop."
 ---
 
 I'm stuck.

@@ -7,6 +7,7 @@ tags: ["short fiction", "relationships"]
 form: "fragment"
 images:
   - images/stories/why-do-you-keep-coming-back-to-me.png
+line: "Because, you still keep seeking that validation from someone. but this time, this time i know better."
 ---
 
 "I Loved you." She insisted.

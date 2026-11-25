@@ -6,6 +6,7 @@ description: "An anxious spiral about appearing functional while doubt waits for
 contentWarnings: ["anxiety", "depression"]
 tags: ["reflections", "mental health"]
 form: "letter"
+line: "And the worst part? No one else sees it. On the outside, you seem fine. Functional. Maybe even happy."
 ---
 
 Have you ever been hit by a sudden dose of reality?

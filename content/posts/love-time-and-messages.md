@@ -9,6 +9,7 @@ tags: ["short fiction", "speculative fiction", "relationships"]
 form: "story"
 images:
   - images/stories/love-time-and-messages.webp
+line: "Out of nowhere, I started receiving messages via two different chats in my chat app."
 ---
 
 It finally happened. It was only funny when I was theorycrafting about it, but now that it really happened, I don’t know how to handle this.

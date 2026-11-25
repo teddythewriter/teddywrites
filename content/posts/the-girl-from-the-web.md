@@ -7,6 +7,7 @@ tags: ["relationships", "short fiction"]
 form: "fragment"
 images:
   - images/stories/the-girl-from-the-web.png
+line: "She was a paradox, scary yet intriguing."
 ---
 
 I wouldn't exactly call her a ball of pure happiness. she was grey, her heart was pure, but her life filled with darkness. she was someone you would call a flight risk. yet, i found her quite compelling. a puzzle to solve. the way i met her, the way i kept talking with her, i have grown quite fond of her. 

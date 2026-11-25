@@ -8,6 +8,7 @@ tags: ["short fiction", "mental health"]
 form: "story"
 images:
   - images/stories/liquid-courage.png
+line: "Remember back when I used to call you in the middle of the night because I remembered some random thing?"
 ---
 
 ring ring ring

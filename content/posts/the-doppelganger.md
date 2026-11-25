@@ -9,6 +9,7 @@ tags: ["short fiction", "speculative fiction"]
 form: "story"
 images:
   - images/stories/the-doppelganger.webp
+line: "As he listened, the music stopped, as if the player expected him to continue where they had left off. So he did."
 ---
 
 Louis was practising a new piece of sheet music given to him by his mentor. He had always been fond of the piano and its music. Throughout his five-year journey, he kept setting new milestones to surpass the ones before. His mentor knew this and trained him without making him feel overwhelmed.

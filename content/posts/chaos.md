@@ -5,6 +5,7 @@ draft: false
 description: "A quiet argument with the fear that follows an unexpectedly comforting connection."
 tags: ["relationships", "reflections"]
 form: "fragment"
+line: "She feels so homely. Is that even a word? I feel at ease with her."
 ---
 
 Is she chaotic?

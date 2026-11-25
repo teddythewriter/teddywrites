@@ -5,6 +5,7 @@ draft: false
 description: "A return to broken promises, lost love, and notes once written for a shared future."
 tags: ["relationships", "reflections"]
 form: "letter"
+line: "Wake-up notes to an Unicorn, I named it. I wanted her to wake up and read one of my notes everyday."
 ---
 
 I've always wondered how fragile promises can be. How at one time we are so fixated on trying to make everything and then suddenly those promises mean nothing at all. One time someone could mean the world to us and then they mean nothing at all.

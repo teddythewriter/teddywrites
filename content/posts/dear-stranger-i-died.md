@@ -5,6 +5,7 @@ draft: false
 description: "A letter about heartbreak, losing a version of yourself, and finding clarity in the aftermath."
 tags: ["reflections", "relationships"]
 form: "letter"
+line: "After I died, I had to collect my pieces and go to work the next day, answer emails, smile at people, pretend my chest wasn’t a demolition site."
 ---
 
 Dear Stranger,

@@ -5,6 +5,7 @@ draft: false
 description: "A short challenge to the compromises that quietly turn ambition into routine."
 tags: ["reflections"]
 form: "fragment"
+line: "Do you remember the first time you let someone pay you to suppress your dreams?"
 ---
 
 Do you remember the first time you let someone pay you to suppress your dreams?

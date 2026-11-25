@@ -6,6 +6,7 @@ description: "A letter across time about innocence, depression, and the person s
 contentWarnings: ["depression"]
 tags: ["reflections", "mental health"]
 form: "letter"
+line: "The ones who you thought would stay, they left. The ones you thought who wouldn't, they stayed."
 ---
 
 Dear 17 year old me,

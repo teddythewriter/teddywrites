@@ -7,6 +7,7 @@ tags: ["short fiction", "relationships"]
 form: "story"
 images:
   - images/stories/rain-and-girl.webp
+line: "When I'm all soaked in rain, I was no longer myself, I was one with rain."
 ---
 
 I was caught off guard with a feeling of sudden coldness on my palm. It wasn't in the forecast, was it? I didn't even bring my umbrella. I thought to myself.

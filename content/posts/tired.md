@@ -5,6 +5,7 @@ draft: false
 description: "A weary note about creative silence, lost closeness, and wishing the timing had been different."
 tags: ["mental health", "relationships"]
 form: "letter"
+line: "And now, I'm one less soulmate in my life."
 ---
 
 I'm a little bit tired.

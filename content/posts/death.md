@@ -8,6 +8,7 @@ tags: ["short fiction", "grief"]
 form: "story"
 images:
   - images/stories/death.png
+line: "I have died, It's been a minute. I can hear Doctors and Nurses trying their best to breathe life into me."
 ---
 
 I have died,

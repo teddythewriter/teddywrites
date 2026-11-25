@@ -7,6 +7,7 @@ tags: ["relationships", "short fiction"]
 form: "story"
 images:
   - images/stories/one-last-time.png
+line: "Oh, I know those words. You're already planning how to cope if I leave."
 ---
 
 Hey, how are you?

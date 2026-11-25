@@ -5,6 +5,7 @@ draft: false
 description: "A skeptical look at nostalgia for the person we claim we used to be."
 tags: ["reflections", "mental health"]
 form: "letter"
+line: "I've always wanted to ask them whether they even remembered who they used to be."
 ---
 
 I often stumble upon people telling me that they miss their old selves. Funny they are. I've always wanted to ask them whether they even remembered who they used to be. I mean, I can't remember who the fuck I was yesterday let alone my oldself. How do people keep saying that they miss someone when they clearly have no idea who they were before?

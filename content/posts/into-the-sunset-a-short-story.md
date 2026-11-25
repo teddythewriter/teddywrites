@@ -10,6 +10,7 @@ tags: ["short fiction", "mental health", "relationships"]
 form: "story"
 images:
   - images/stories/into-the-sunset.webp
+line: "If, at some point in our lives, you start to see me as I see myself, would you start to hate me?"
 ---
 
 It isn't easy, you know. Eventually, you'll start to see me as I see myself right now, and the feelings you have for me will fade away like they never existed in the first place.

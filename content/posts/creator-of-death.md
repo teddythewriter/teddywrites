@@ -8,6 +8,7 @@ tags: ["short fiction", "speculative fiction"]
 form: "story"
 images:
   - images/stories/creator-of-death.webp
+line: "Do you think parents of Mass murderers were worried or regretted that they birthed and raised their kids to be such monsters?"
 ---
 
 As I finished my final entry on the report of the Olympian experiment, I felt like a heavy burden lifting from my shoulders. But that only lasted for a mere moment when I realised what I had done.

@@ -5,6 +5,7 @@ draft: false
 description: "An internal conversation turns self-criticism into an uncomfortable form of honesty."
 tags: ["mental health", "reflections"]
 form: "letter"
+line: "Hey, be kind. I'm you."
 ---
 
 Hi, It's me.

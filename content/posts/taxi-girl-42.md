@@ -5,6 +5,7 @@ draft: false
 description: "A café meeting, a borrowed moment, and the quiet hope of an unattainable love."
 tags: ["short fiction", "relationships"]
 form: "story"
+line: "They say time passes quickly when you're nervous."
 ---
 
 It was almost time for the sun to rise. As I got up I remembered that I had promised her that I would come to meet her. I checked my messages and saw her message,

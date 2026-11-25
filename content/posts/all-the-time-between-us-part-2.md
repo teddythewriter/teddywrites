@@ -8,6 +8,7 @@ form: "story"
 seriesPage: "/series/all-the-time-between-us"
 part: 2
 images: ["images/stories/all-the-time-between-us.png"]
+line: "I thought of all the mornings I’d arrived with documents on my phone and five minutes to spare."
 ---
 
 “Where?”

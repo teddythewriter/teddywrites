@@ -5,6 +5,7 @@ draft: false
 description: "Leaving a damaging relationship does not end the fear it taught you to carry."
 tags: ["relationships", "mental health"]
 form: "letter"
+line: "Do you know what's not fair? It's when you leave a bad relationship and you are the one who's left suffering."
 ---
 
 Do you know what's not fair? It's when you leave a bad relationship and you are the one who's left suffering. Trying not to feel anymore, trying to walk on eggshells around emotions because they've become so fragile that you don't feel like you can entrust someone with them.

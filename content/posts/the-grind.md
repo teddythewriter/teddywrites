@@ -6,6 +6,7 @@ description: "A direct argument for choosing the difficult work of living when g
 contentWarnings: ["suicide"]
 tags: ["mental health", "reflections"]
 form: "fragment"
+line: "Do you know what's hard though? Living."
 ---
 
 Dying is easy.

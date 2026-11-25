@@ -8,6 +8,7 @@ tags: ["short fiction"]
 form: "story"
 images:
   - images/stories/the-spy.webp
+line: "Tell me Timmy, how do we treat someone who's out of control?"
 ---
 
 Did you call me Mr. Evans? Timmy asked the bossy figure in front of him.

@@ -6,6 +6,7 @@ description: "A descent through overthinking, exhaustion, and the wish for a kin
 contentWarnings: ["depression", "suicidal thoughts"]
 tags: ["mental health", "writing"]
 form: "letter"
+line: "Just a quiet moment, a breath too long, a silence too wide. And suddenly, I'm spiraling again."
 ---
 
 I Hate Thinking
