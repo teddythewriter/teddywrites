@@ -5,7 +5,7 @@ draft: false
 type: posts
 storyLanguage: si
 form: "story"
-description: "ඔෆිස් එකක මරණ කිහිපයක්, සහ අනුන්ට 'සැනසීම' දෙන්න කැමති අය ගැන කතාවක්."
+description: "ඔෆිස් එකක කතාවක්."
 tags: ["short fiction", "thriller"]
 images: ["images/stories/the-wrong-side-of-grace.png"]
 line: "මලගෙයක් කියන්නේ මහ අමුතු තැනක්."
