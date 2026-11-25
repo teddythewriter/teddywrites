@@ -41,6 +41,9 @@ jobs:
       - name: Check internal links and required metadata
         run: python scripts/check_site.py public
 
+      - name: Check homepage hero
+        run: python scripts/check_home.py public
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

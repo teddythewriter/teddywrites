@@ -4,19 +4,45 @@
   {{- $fragments := first 3 (where $posts "Params.form" "fragment").ByDate.Reverse -}}
   {{- $tones := slice "tone-yellow" "tone-blue" "tone-purple" -}}
   <main id="main-content">
+    {{- /* Opening line: every post with a hand-picked `line`, newest first. The newest is
+         server-rendered so the hero works without JS; opening-line.js rotates the rest. */}}
+    {{- $lined := where (where site.RegularPages "Section" "in" (slice "posts" "sinhala")) "Params.line" "!=" nil -}}
+    {{- $entries := slice -}}
+    {{- range $lined.ByDate.Reverse -}}
+      {{- $entries = $entries | append (dict
+          "line" .Params.line
+          "title" .Title
+          "url" .RelPermalink
+          "form" (.Params.form | default "" | humanize)
+          "date" (.Date.Format "January 2006")
+          "lang" (cond (eq .Params.storyLanguage "si") "si" "en")) -}}
+    {{- end -}}
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero-inner">
-        <h1 id="hero-title" class="sr-only">{{ .Site.Title }}</h1>
-        <div class="entry-tiles">
-          {{- range $index, $path := slice "/stories" "/fragments" "/letters" }}{{ with site.GetPage $path }}
-          <a class="entry-tile" href="{{ .RelPermalink }}">
-            <span class="tone-label {{ index $tones $index }}">{{ printf "%02d" (add $index 1) }}</span>
-            <strong>{{ .Title }}</strong>
-            {{ with .Params.tile }}<span>{{ . }}</span>{{ end }}
-          </a>
-          {{- end }}{{ end }}
+      <h1 id="hero-title" class="sr-only">{{ .Site.Title }}</h1>
+      {{- with $entries }}{{ $e := index . 0 }}
+      <div class="stage">
+        <div class="hero-inner stage-inner">
+          <p class="stage-label" data-ol="label">{{ with $e.form }}{{ . }} · {{ end }}{{ $e.date }}</p>
+          <blockquote class="stage-line" data-ol="line" lang="{{ $e.lang }}" aria-live="polite">{{ $e.line }}</blockquote>
+          <p class="stage-from">from <a data-ol="title" href="{{ $e.url }}"{{ if eq $e.lang "si" }} lang="si"{{ end }}><strong>{{ $e.title }}</strong></a></p>
+          <div class="stage-actions">
+            <a class="btn btn-primary" data-ol="read" href="{{ $e.url }}">{{ with $e.form }}Read the {{ lower . }}{{ else }}Read it{{ end }}</a>
+            <button type="button" class="stage-another" data-ol="another" hidden>Show me another ↻</button>
+          </div>
         </div>
+        <script type="application/json" id="opening-lines">{{ $entries | jsonify | safeJS }}</script>
       </div>
+      {{- end }}
+      {{- $posts := where site.RegularPages "Section" "posts" }}
+      <nav class="browse-row" aria-label="Browse by form">
+        <div class="hero-inner browse-inner">
+          <span>or browse</span>
+          <a href="{{ "stories/" | relLangURL }}">{{ len (where $posts "Params.form" "story") }} stories</a>
+          <a href="{{ "fragments/" | relLangURL }}">{{ len (where $posts "Params.form" "fragment") }} fragments</a>
+          <a href="{{ "letters/" | relLangURL }}">{{ len (where $posts "Params.form" "letter") }} letters</a>
+          <a href="{{ "series/" | relLangURL }}">{{ len (where site.RegularPages "Section" "series") }} serial</a>
+        </div>
+      </nav>
       <div class="palette-strip" aria-hidden="true"><span style="background: var(--red)"></span><span style="background: var(--orange)"></span><span style="background: var(--yellow)"></span><span style="background: var(--green)"></span><span style="background: var(--aqua)"></span><span style="background: var(--blue)"></span><span style="background: var(--purple)"></span></div>
     </section>
 
