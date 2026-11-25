@@ -118,5 +118,8 @@
       </div>
     </section>
     </div>
+    {{- with $entries }}{{ $script := resources.Get "js/opening-line.js" | minify | fingerprint }}
+    <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" defer></script>
+    {{- end }}
   </main>
 {{ end }}
