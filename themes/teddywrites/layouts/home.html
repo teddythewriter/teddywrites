@@ -1,9 +1,8 @@
 {{ define "main" }}
   {{- $posts := where .Site.RegularPages "Section" "posts" -}}
   {{- $featured := first 3 (where $posts "Params.featured" true) -}}
-  {{- $fragments := first 3 (where $posts "Params.form" "fragment").ByDate.Reverse -}}
   {{- $tones := slice "tone-yellow" "tone-blue" "tone-purple" -}}
-  <main id="main-content">
+  <main id="main-content" class="home-main">
     {{- /* Opening line: every post with a hand-picked `line`, newest first. The newest is
          server-rendered so the hero works without JS; opening-line.js rotates the rest. */}}
     {{- $lined := where (where site.RegularPages "Section" "in" (slice "posts" "sinhala")) "Params.line" "!=" nil -}}
@@ -19,21 +18,55 @@
     {{- end -}}
     <section class="hero" aria-labelledby="hero-title">
       <h1 id="hero-title" class="sr-only">{{ .Site.Title }}</h1>
-      {{- with $entries }}{{ $e := index . 0 }}
       <div class="stage">
-        <div class="hero-inner stage-inner">
-          <p class="stage-label" data-ol="label">{{ with $e.form }}{{ . }} · {{ end }}{{ $e.date }}</p>
-          <blockquote class="stage-line" data-ol="line" lang="{{ $e.lang }}">{{ $e.line }}</blockquote>
-          <p class="stage-from">from <a data-ol="title" href="{{ $e.url }}"{{ if eq $e.lang "si" }} lang="si"{{ end }}><strong>{{ $e.title }}</strong></a></p>
-          <div class="stage-actions">
-            <a class="btn btn-primary" data-ol="read" href="{{ $e.url }}">{{ with $e.form }}Read the {{ lower . }}{{ else }}Read it{{ end }}</a>
-            <button type="button" class="stage-another" data-ol="another" hidden>Show me another ↻</button>
+        <div class="drift" aria-hidden="true"><span class="drift-a"></span><span class="drift-b"></span><span class="drift-c"></span></div>
+        <div class="hero-inner stage-grid">
+          {{- with $entries }}{{ $e := index . 0 }}
+          <div class="stage-inner">
+            <p class="stage-label rise" data-ol="label">{{ with $e.form }}{{ . }} · {{ end }}{{ $e.date }}</p>
+            <blockquote class="stage-line" data-ol="line" lang="{{ $e.lang }}">{{ $e.line }}</blockquote>
+            <p class="stage-from rise">from <a data-ol="title" href="{{ $e.url }}"{{ if eq $e.lang "si" }} lang="si"{{ end }}><strong>{{ $e.title }}</strong></a></p>
+            <div class="stage-actions rise">
+              <a class="btn btn-primary" data-ol="read" href="{{ $e.url }}">{{ with $e.form }}Read the {{ lower . }}{{ else }}Read it{{ end }}</a>
+              <button type="button" class="stage-another" data-ol="another" hidden>Show me another ↻</button>
+              <button type="button" class="stage-pause" data-ol="pause" aria-pressed="false" hidden>Pause</button>
+            </div>
           </div>
+          {{- end }}
+
+          <aside class="home-panel rise" aria-label="Also on {{ .Site.Title }}">
+            {{- range first 1 (where (where .Site.RegularPages "Section" "series") "Params.seriesStatus" "Ongoing") }}
+            {{- $serial := . }}
+            {{- $chapters := sort (where site.RegularPages "Params.seriesPage" .Path) "Params.part" }}
+            {{- with $chapters }}
+            {{- $first := index . 0 }}{{ $latest := index . (sub (len .) 1) }}
+            <div class="panel-serial">
+              <p class="marked-label">Now serialising · Part {{ $latest.Params.part }}</p>
+              <a class="panel-title" href="{{ $serial.RelPermalink }}">{{ $serial.Title }}</a>
+              <p class="panel-links">
+                <a href="{{ $first.RelPermalink }}">Start at Part {{ $first.Params.part }}</a>
+                {{- if gt (len .) 1 }}<a href="{{ $latest.RelPermalink }}">Continue with Part {{ $latest.Params.part }}</a>{{ end }}
+              </p>
+            </div>
+            {{- end }}
+            {{- end }}
+            {{- with $featured }}
+            <div class="panel-start">
+              <p class="panel-heading">Start here</p>
+              <ul>
+                {{- range $index, $story := . }}
+                <li><a href="{{ .RelPermalink }}"><span class="tone-label {{ index $tones (mod $index 3) }}">{{ with .Params.mood }}{{ . }} · {{ end }}{{ .Date.Format "2006" }}</span><span>{{ .Title }}</span></a></li>
+                {{- end }}
+              </ul>
+            </div>
+            {{- end }}
+          </aside>
         </div>
+        {{- with $entries }}
+        <div class="stage-progress" aria-hidden="true"><span></span></div>
         <script type="application/json" id="opening-lines">{{ $entries | jsonify | safeJS }}</script>
+        {{- end }}
       </div>
-      {{- end }}
-      {{- $posts := where site.RegularPages "Section" "posts" }}
       <nav class="browse-row" aria-label="Browse by form">
         <div class="hero-inner browse-inner">
           <span>or browse</span>
@@ -41,83 +74,11 @@
           <a href="{{ "fragments/" | relLangURL }}">{{ len (where $posts "Params.form" "fragment") }} fragments</a>
           <a href="{{ "letters/" | relLangURL }}">{{ len (where $posts "Params.form" "letter") }} letters</a>
           <a href="{{ "series/" | relLangURL }}">{{ len (where site.RegularPages "Section" "series") }} serial</a>
+          <a class="browse-themes" href="{{ "tags/" | relLangURL }}">themes</a>
         </div>
       </nav>
       <div class="palette-strip" aria-hidden="true"><span style="background: var(--red)"></span><span style="background: var(--orange)"></span><span style="background: var(--yellow)"></span><span style="background: var(--green)"></span><span style="background: var(--aqua)"></span><span style="background: var(--blue)"></span><span style="background: var(--purple)"></span></div>
     </section>
-
-    <div class="site-main">
-    {{- range first 1 (where (where .Site.RegularPages "Section" "series") "Params.seriesStatus" "Ongoing") }}
-    {{- $serial := . }}
-    {{- $chapters := sort (where site.RegularPages "Params.seriesPage" .Path) "Params.part" }}
-    {{- with $chapters }}
-    {{- $first := index . 0 }}{{ $latest := index . (sub (len .) 1) }}
-    <section class="card serial-card" aria-labelledby="serial-title">
-      <p class="marked-label">Now serialising · Part {{ $latest.Params.part }} out {{ $latest.Date.Format "Jan 2, 2006" }}</p>
-      {{ with $serial.Params.teaser }}<blockquote>{{ range $index, $line := split . "\n" }}{{ if $index }}<br>{{ end }}{{ $line }}{{ end }}</blockquote>{{ end }}
-      <div>
-        <h2 id="serial-title">{{ $serial.Title }}</h2>
-        {{ with $serial.Description }}<p>{{ . }}</p>{{ end }}
-      </div>
-      <div class="button-row">
-        <a class="btn btn-primary" href="{{ $first.RelPermalink }}">Start at Part {{ $first.Params.part }}</a>
-        {{ if gt (len .) 1 }}<a class="btn" href="{{ $latest.RelPermalink }}">Continue with Part {{ $latest.Params.part }}</a>{{ end }}
-      </div>
-    </section>
-    {{- end }}
-    {{- end }}
-
-    {{- with $featured }}
-    <section class="home-section" aria-labelledby="start-title">
-      <div class="section-heading">
-        <h2 id="start-title">Start here</h2>
-        <a class="more-link" href="{{ "stories/" | relLangURL }}">All stories</a>
-      </div>
-      <div class="card-grid">
-        {{- range $index, $story := . }}
-        <a class="card" href="{{ .RelPermalink }}">
-          <span class="tone-label {{ index $tones (mod $index 3) }}">{{ with .Params.mood }}{{ . }} · {{ end }}{{ .Date.Format "2006" }}</span>
-          <span class="card-title">{{ .Title }}</span>
-          <span class="card-text">{{ .Description | default (.Summary | plainify | truncate 145) }}</span>
-        </a>
-        {{- end }}
-      </div>
-    </section>
-    {{- end }}
-
-    {{- with $fragments }}
-    <section class="home-section" aria-labelledby="notebook-title">
-      <div class="section-heading">
-        <h2 id="notebook-title">From the notebook</h2>
-        <a class="more-link" href="{{ "fragments/" | relLangURL }}">All fragments</a>
-      </div>
-      <div class="notebook">
-        {{- range . }}
-        <article>
-          <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
-          <div>
-            <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-            <p>{{ .Plain | htmlUnescape | truncate 200 }}</p>
-          </div>
-        </article>
-        {{- end }}
-      </div>
-    </section>
-    {{- end }}
-
-    <section class="home-section" aria-labelledby="themes-title">
-      <div class="section-heading">
-        <h2 id="themes-title">Follow a thread</h2>
-        <a class="more-link" href="{{ "tags/" | relLangURL }}">All themes</a>
-      </div>
-      <div class="pill-row">
-        {{- /* "short fiction" and "reflections" are covered by the form pages above. */}}
-        {{- range .Site.Taxonomies.tags.ByCount }}{{ if not (in (slice "short fiction" "reflections") (lower .Page.Title)) }}
-        <a class="pill" href="{{ .Page.RelPermalink }}">{{ .Page.Title | lower }}</a>
-        {{- end }}{{ end }}
-      </div>
-    </section>
-    </div>
     {{- with $entries }}{{ $script := resources.Get "js/opening-line.js" | minify | fingerprint }}
     <script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}" defer></script>
     {{- end }}
